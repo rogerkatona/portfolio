@@ -1,82 +1,101 @@
-import Head from 'next/head'
+import Head from "next/head";
+import Layout, { siteTitle } from "../components/layout";
+import ClientLogos from "../components/clientLogos";
+import { getSortedPostsData } from "../lib/articles";
+import Link from "next/link";
+import Date from "../components/date";
+import HighlightQuoteHurff from "../components/highlight_quote_hurff";
+import HighlightContact from "../components/highlight_contact";
+import HighlightQuoteWhile from "../components/highlight_quote_while";
+import Hero from "../components/hero"
 
-export default function Home() {
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}
+
+export default function Home({allPostsData}) {
+
+  let featuredPosts = allPostsData.filter(function (featured){
+    return featured.isFeatured === 'true'
+  })
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <Layout className="flex flex-col items-center justify-center  py-2">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>{siteTitle}</title>
       </Head>
-
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
-    </div>
+        <Hero/>
+        <ClientLogos/>
+        <HighlightQuoteWhile/>
+      <section className='xl:m-24 m-8 '>
+        {
+          featuredPosts
+              .filter(featured => featured.type === 'articles')
+              .map(featured =>
+                  <div key={featured.id} className='flex lg:flex-row flex-col max-w-7xl mx-auto'>
+                    <div className='flex'>
+                      <img
+                          src={featured.imageSourceFeatured}
+                          height={750}
+                          width={1770}
+                          alt={'Featured Article'}
+                      />
+                    </div>
+                    <div className='flex pt-8 lg:px-0 lg:pl-8 pl-0 '>
+                      <div className='lg:mx-auto flex flex-col lg:justify-center'>
+                        <div className='font-roboto text-3xl tracking-tighter '>
+                          {featured.title}
+                        </div>
+                        <div className='text-secondary text-xs'>
+                          <Date dateString={featured.date} />
+                        </div>
+                        <div className='text-black text-xl py-4'>{featured.description}</div>
+                        <Link href={`/articles/${featured.id}`}>
+                          <a className='text-link hover:underline uppercase'>READ FEATURED ARTICLE &#8594;</a>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+              )}
+      </section>
+        <HighlightQuoteHurff/>
+      <section className='lg:m-24 m-8 '>
+        {
+          featuredPosts
+              .filter(featured => featured.type === 'portfolio')
+              .map(featured =>
+                  <div key={featured.id} className='flex lg:flex-row-reverse flex-col'>
+                    <div className='flex'>
+                      <img
+                          src={featured.imageSourceFeatured}
+                          height={750}
+                          width={1770}
+                          alt={'featured blog image'}
+                      />
+                    </div>
+                    <div className='flex pl-8 lg:pt-0 pt-12 lg:pb-0 pb-12 '>
+                      <div className='lg:mx-auto flex flex-col lg:justify-center'>
+                        <div className='font-roboto text-3xl tracking-tighter '>
+                          {featured.title}
+                        </div>
+                        <div className='text-secondary text-xs'>
+                          <Date dateString={featured.date} />
+                        </div>amp
+                        <div className='text-black text-xl py-4'>{featured.description}</div>
+                        <Link href={`/articles/${featured.id}`}>
+                          <a className='text-link hover:underline uppercase'>Read The Full Story &#8594;</a>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+              )}
+      </section>
+        <HighlightContact/>
+    </Layout>
   )
 }
