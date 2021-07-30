@@ -6,6 +6,7 @@ import Topics from "../../components/articleTopics";
 import topicItems from "../../data/topicItems";
 import SocialMediaItem from "../../components/socialMediaItem";
 import socialMediaItems from "../../data/socialMediaItems";
+import Link from "next/link";
 
 export async function getStaticProps({ params }) {
     // Add the "await" keyword like this:
@@ -48,7 +49,7 @@ export default function Post({ postData }) {
                             A collection of articles to teach, inspire, and elevate our work as web designers and front-end developers.
                         </div>
                     </header>
-                    <section className="flex flex-row justify-between">
+                    <section className="flex flex-row justify-between space-x-6">
                         <section className='lg:block hidden '>
                             <span className={'font-bold'}>Topics:</span>
                             <Topics topicItems={topicItems}/>
@@ -94,16 +95,20 @@ export default function Post({ postData }) {
                                     <section className='mb-12'>
                                         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
                                     </section>
-
                         </section>
                         <section className='lg:block hidden '>
                             <div className=''>
-                                <img
-                                    src="/image/ad-websiteAnalysis.jpg"
-                                    height={498}
-                                    width={251}
-                                    alt="Free website analysis graphic"
-                                />
+                                <Link href='/landing-pages/website-analysis'>
+                                    <a>
+                                    <img
+                                        src="/image/ad-websiteAnalysis.png"
+                                        height={498}
+                                        width={251}
+                                        alt="Website analysis graphic"
+                                    />
+                                    </a>
+                                </Link>
+
                             </div>
                         </section>
                     </section>

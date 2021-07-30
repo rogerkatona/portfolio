@@ -5,9 +5,9 @@ typeOfArticle: "Article"
 date: '2021-07-06'
 description: 'Learn to use 4 key Flexbox properties.  You will find these properties incredibly useful, and eliminate dependency on legacy CSS hacks like float or inline-block.'
 isFeatured: 'true'
-imageSourceFeatured: '/image/postGraphic-flexboxTailwind-featured.jpg'
-bannerImageSource: '/image/banner-flexbox.jpg'
-bannerSMImageSource: '/image/bannerSM-flexbox.jpg'
+imageSourceFeatured: '/image/postGraphic-flexboxTailwind-featured.png'
+bannerImageSource: '/image/banner-flexbox.png'
+bannerSMImageSource: '/image/bannerSM-flexbox.png'
 topic: 'Flexbox | Tailwind | CSS'
 alt: 'Top 4 foundational Flexbox properties'
 author: 'Roger Katona'
@@ -15,7 +15,7 @@ authorDescription: 'UI/UX Designer'
 authorImageSource: '/image/author_rogerkatona.png'
 ogURL: 'https://www.rogerkatona.com/posts/flexbox-tailwind'
 ogType: 'article'
-ogImage: 'https://www.rogerkatona.com/image/bannerSM-flexbox.jpg'
+ogImage: 'https://www.rogerkatona.com/image/bannerSM-flexbox.png'
 
 
 ---

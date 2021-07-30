@@ -15,7 +15,7 @@ export default function Header() {
                 <section>
                     <Link href='/'>
                         <a>
-                            <div className="flex flex-row items-center ">
+                            <div className="flex flex-row items-center">
                                 <div className="md:block hidden">
 
 
