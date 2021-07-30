@@ -9,7 +9,7 @@ const socialMediaItems = [
     },
     {
         label: "Instagram",
-        src: '/image/icon-instagram.png',
+        src: '/image/icon-Instagram.png',
         path: "https://www.instagram.com/rogerkatona/",
         alt: 'Instagram',
     },
