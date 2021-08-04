@@ -4,8 +4,8 @@ import { getSortedPostsData } from '../lib/articles'
 import Link from 'next/link'
 import Date from "../components/date";
 import {useEffect, useState} from "react";
-import Topics from "../components/articleTopics";
-import topicItems from "../data/topicItems";
+// import Topics from "../components/articleTopics";
+// import topicItems from "../data/topicItems";
 
 
 export async function getStaticProps() {
@@ -54,11 +54,11 @@ export default function Articles({allPostsData}) {
                         </div>
                     </header>
                     <section className="flex flex-row justify-between">
-                        <section className='lg:block hidden '>
-                            <span className={'font-bold'}>Topics:</span>
-                            <Topics topicItems={topicItems}/>
-                        </section>
-                        <section className="w-4/5">
+                        {/*<section className="lg:block hidden">*/}
+                        {/*    <span className={'font-bold'}>Topics:</span>*/}
+                        {/*    <Topics topicItems={topicItems}/>*/}
+                        {/*</section>*/}
+                        <section className = "w-full">
                                 {featuredPosts
                                     .map(featured =>
                                         <div key={featured.id} className='flex lg:flex-row flex-col'>

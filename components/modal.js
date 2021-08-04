@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Form from "./form";
+import  { Form } from "./form";
 import Link from "next/link";
 
 
 const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
-    <React.Fragment>
+    <>
         <div className="relative" aria-modal aria-hidden tabIndex={-1} role="dialog">
             <header className="flex-shrink-0 fixed top-4 left-4 z-30">
                 <Link href='/'>
@@ -73,7 +73,7 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
 
             </div>
         </div>
-    </React.Fragment>, document.body
+    </>, document.body
 ) : null;
 
 export default Modal;

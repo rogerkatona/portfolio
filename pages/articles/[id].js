@@ -98,7 +98,7 @@ export default function Post({ postData }) {
                         </section>
                         <section className='lg:block hidden '>
                             <div className=''>
-                                <Link href='/landing-pages/website-analysis'>
+                                <Link href='/campaign/website-analysis'>
                                     <a>
                                     <img
                                         src="/image/ad-websiteAnalysis.png"

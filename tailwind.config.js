@@ -86,7 +86,7 @@ module.exports = {
       'lightGray': '#e1e1e1',
       'darkBlue': '#06070d',
       'hoverNav': 'rgba(97,120,140,1)',
-
+      'orange': '#FF6A00',
     }),
     borderColor: theme => ({
       ...theme('colors'),

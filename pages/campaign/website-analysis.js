@@ -1,12 +1,13 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../../components/layout'
-import Form from "../../components/form";
-import {useEffect, useState} from "react";
+import  { Form } from "../../components/form";
+import {useEffect, useRef, useState} from "react";
 import {useScreen} from "../../lib/useScreenSize";
 
-export default function Contact() {
+export default function WebsiteAnalysisContact() {
 
     const [screenSize, setScreenSize] = useState(false)
+    const initialRef = useRef()
 
     useEffect(() => {
         if (useScreen('md')  ){
@@ -33,7 +34,7 @@ export default function Contact() {
                     <div className="flex flex-col justify-center md:p-16 p-8 md:mt-0 mt-6 bg-bg-contactModal bg-no-repeat bg-cover ">
                         <div className="text-lightGray">
                             <div className="flex flex-col md:pb-12">
-                                <span>Priced at:</span>
+                                <span>Price:</span>
                                 <p className="text-lightGray text-6xl">$159.00</p>
                             </div>
                             <div className="flex flex-col md:pb-12">
@@ -48,7 +49,7 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="md:p-16 p-8 bg-gray w-full flex flex-col justify-center">
-                        <Form/>
+                        <Form initialRef={initialRef} />
                     </div>
                 </div>
             </div>

@@ -1,12 +1,17 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
-import Form from "../components/form";
+import  { Form } from "../components/form";
+import { useRef } from 'react'
 import Toast from "../components/toast";
+import Modal from "../components/modal";
 // import global from "../lib/global"
 
-export default function Contact() {
+export const Contact = () => {
+
+    const initialRef = useRef()
 
     return (
+        <>
         <Layout home>
             <Head>
                 <title>{siteTitle}</title>
@@ -19,7 +24,7 @@ export default function Contact() {
                                     Contact
                                 </div>
                                 <div id="subHeadlineText" className='text-base text-gray-500 mt-2'>
-                                    Our passion to design and built things are only matched by our desire to serve our clients.
+                                    My passion to design and built things are only matched by my desire to serve my clients.
                                 </div>
                             </header>
                     <div className="flex flex-col md:flex-row justify-center h-screen65vh">
@@ -32,10 +37,13 @@ export default function Contact() {
                                 </div>
                             </div>
                             <div className="md:p-16 p-8 bg-gray w-full flex flex-col justify-center">
-                                <Form/>
+                                <Form initialRef={initialRef} />
                             </div>
                     </div>
                     </div>
         </Layout>
+        </>
     )
 }
+
+export default Contact;

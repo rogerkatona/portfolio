@@ -1,11 +1,11 @@
 ---
-title: 'Cross-Training - A better approach for UI/UX designers'
-type: "articles"
+title: 'McKesson'
+type: "portfolio"
 date: '2021-06-17'
-description: 'This approach is a specific technique of cross-training emphasizing a deep learning of roles and skills nearest to you in the organization.'
+description: 'Designed an e-Commerce application for a subsidiary brand of McKesson'
 isFeatured: 'false'
-bannerImageSource: '/image/banner-crossTraining.jpg'
-bannerSMImageSource: '/image/bannerSM-crossTraining.jpg'
+bannerImageSource: '/image/bgLG-mckesson.png'
+bannerSMImageSource: '/image/bgSM-mckesson.png'
 topic: 'Process | UI/UX Design'
 author: 'Roger Katona'
 authorDescription: 'UI/UX Designer'
