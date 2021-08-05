@@ -62,8 +62,8 @@ export default function Articles({allPostsData}) {
                                     <div key={featured.id} className='flex flex-col'>
                                         <div className='flex '>
                                             <img
-                                                src={featured.imageSourceFeatured}
-                                                height={451}
+                                                src={featured.bannerImageSource}
+                                                height={651}
                                                 width={1626}
                                                 alt={featured.alt}
                                             />
