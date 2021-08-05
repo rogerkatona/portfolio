@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
-import { getSortedPostsData } from '../lib/portfolio'
+import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
-import Date from "../components/date";
 import {useEffect, useState} from "react";
+
 
 
 
@@ -17,6 +17,7 @@ export async function getStaticProps() {
 }
 
 export default function Articles({allPostsData}) {
+
 
     const [active, setActive] = useState(false)
 

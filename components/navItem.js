@@ -7,6 +7,20 @@ export default function NavItem (props) {
 
 const router = useRouter()
 
+let articlePath;
+
+function articlePathOptions(){
+    const router = useRouter()
+    if (router.pathname === '/articles/[...id].js'){
+        articlePath = '/articles'
+        console.log (router.pathname)
+    } else {
+        articlePath = '/articles'
+    }
+}
+
+
+
 return (
     <div className="pb-3 flex flex-row items-center lg:pb-0">
         <Link href={props.path}>

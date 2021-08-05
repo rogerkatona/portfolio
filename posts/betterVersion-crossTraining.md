@@ -1,13 +1,13 @@
 ---
-title: 'Simply Medical'
-type: "portfolio"
+title: 'Cross-Training - A better approach for UI/UX designers'
+type: "articles"
 date: '2021-06-17'
-description: 'Required to design an eCommerce application for a subsidiary brand of McKesson Inc.  Building the User Interface from the ground up by creating an Information Architecture document that defined the site structure, and workflow processes like checkout and login.  Then it was on to creating interactive wireframes for design approval, and lastly a final design handed off to the development team. '
-isFeatured: 'true'
-imageSourceFeatured: '/image/bgLG-simply-medical.png'
+description: 'This approach is a specific technique of cross-training emphasizing a deep learning of roles and skills nearest to you in the organization.'
+isFeatured: 'false'
+imageSourceFeatured: '/image/banner-crossTraining.jpg'
 bannerImageSource: '/image/banner-crossTraining.jpg'
 bannerSMImageSource: '/image/bannerSM-crossTraining.jpg'
-topic: 'eCommerce Design | Usability Research | UI/UX Design'
+topic: 'Process | UI/UX Design'
 author: 'Roger Katona'
 authorDescription: 'UI/UX Designer'
 authorImageSource: '/image/author_rogerkatona.png'

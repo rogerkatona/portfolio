@@ -7,7 +7,7 @@ export default function Footer() {
 
 
     return (
-        <footer className="flex justify-center p-24 bg-primary text-white">
+        <footer className="flex justify-center p-24 bg-primary text-white mt-24">
             <div className='flex md:flex-row flex-col'>
                 <NavBar navItems={navItems}/>
                 <Link href='/contact'>

@@ -5,7 +5,7 @@ typeOfArticle: "Article"
 date: '2021-07-06'
 description: 'Learn to use 4 key Flexbox properties.  You will find these properties incredibly useful, and eliminate dependency on legacy CSS hacks like float or inline-block.'
 isFeatured: 'true'
-imageSourceFeatured: '/image/postGraphic-flexboxTailwind-featured.png'
+imageSourceFeatured: '/image/bannerSM-flexbox.png'
 bannerImageSource: '/image/banner-flexbox.png'
 bannerSMImageSource: '/image/bannerSM-flexbox.png'
 topic: 'Flexbox | Tailwind | CSS'
@@ -22,7 +22,7 @@ ogImage: 'https://www.rogerkatona.com/image/bannerSM-flexbox.png'
 
 ## The challenge and a bit of history
 A difficult aspect of front-end development is to control layout.  Developers have spent countless hours solving this problem.  Early in my front-end development 
-career the larger challenge was to have designs work across the different browsers.  IE and Firefox primarily, along with the many non-compatible versions of new releases (thanks Microsoft) created a struggle and the number of development hours spent solving these issues
+career the larger challenge was to have designs work across the different browsers.  Internet Explorer and Firefox primarily, along with the many non-compatible versions of new releases (thanks Microsoft) created a struggle, and the number of development hours spent solving these issues
 looked like the Griswold's electric meter during Christmas.  Now stir into the cauldron of "things to solve for" different monitor resolutions, and lastly different devices.  Now it looks less like the Griswold's meter 
 and more like my Bosch router spinning at 25K RPM cutting through wood.  Side note.  Using that thing is the stuff of nightmares.  That's enough hullabaloo about the past, let's get on with the here and now.  Flexible Box Layout.  
 
@@ -37,7 +37,7 @@ to have content lay on the page correctly.  Something as simple as having 3 cont
 ---
 
 ## Flexbox: A simplified model
-We will focus on understanding 4 very important key flexbox tailwind.css properties.  This is the foundation for building more complex models.  We will discuss these properties by walking through a simple tutorial.  Note: Additional styles are used in the HTML to show the resulting design more clearly.  See the [live code](https://codepen.io/rogerkatona/pen/GRmpeXj) at codepen.  The 4 key flexbox and their corresponding CSS rendered properties we will work with: 
+Let's focus on understanding 4 very important key flexbox tailwind.css properties.  This is the foundation for building more complex models.  We will discuss these properties by walking through a simple tutorial.  Note: Additional styles are in the HTML to show the resulting design more clearly.  See the [live code](https://codepen.io/rogerkatona/pen/GRmpeXj) at codepen.  The 4 key flexbox and their corresponding CSS rendered properties we will work with: 
 
 - Flex-row `flex-direction:row`
 - Flex-col `flex-direction:col`
