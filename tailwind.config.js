@@ -166,7 +166,7 @@ module.exports = {
       'mono': ['ui-monospace', 'SFMono-Regular'],
       'display': ['Oswald'],
       'body': ['Open Sans'],
-      'banner': ['Futura'],
+      'banner': ['Trebuchet MS'],
       'roboto': ['Roboto'],
     },
   },
