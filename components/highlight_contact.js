@@ -6,10 +6,13 @@ export default function HighlightContact() {
     const {isShowing, toggle} = useModal();
     return (
         <>
-            <section className="lg:m-24 mx-8 my-24">
+
+
+            <section className="bg-primaryLight bg-opacity-5 w-full ">
+                <div className="max-w-7xl mx-auto xl:px-0 px-12 lg:py-24 p-12 mt-24  ">
                 <div className="flex flex-row justify-center">
                     <div className="">
-                        <div className="text-3xl text-center">
+                        <div className="lg:text-3xl text-2xl text-center ">
                                 Reach out.  I want to hear from you.
                         </div>
                         <div className="flex justify-center pt-6">
@@ -23,6 +26,7 @@ export default function HighlightContact() {
                             </Link>
                         </div>
                     </div>
+                </div>
                 </div>
             </section>
             <section>

@@ -22,6 +22,7 @@ module.exports = {
         "screen80vh": "calc(80vh)",
         "screen75vh": "calc(75vh)",
         "screen65vh": "calc(65vh)",
+        "aboutHero": '474px',
       }),
       gradientColorStops: theme => ({
         ...theme('colors'),
@@ -118,7 +119,7 @@ module.exports = {
     backgroundImage: theme => ({
       'hero-pattern': "url('/image/bg-hero.jpg')",
       'hero-sm': "url('/image/bg-hero.jpg')",
-      'hero-about': "url('/image/aboutLadder.png')",
+      'hero-about': "url('/image/banner-rk.png')",
       'bg-contactModal': "url('/image/bg-contact.jpeg')",
     }),
 

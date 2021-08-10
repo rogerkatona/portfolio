@@ -35,7 +35,7 @@ export default function Hero({ children, home }) {
                         ROGER <span className="text-sand">KATONA</span>
                     </div>
                     <div className="lg:text-2xl text-xs text-white">
-                        ui/ux designer | graphic design | front-end developer
+                        ui/ux designer | graphic design | frontend developer
                     </div>
 
                 </div>

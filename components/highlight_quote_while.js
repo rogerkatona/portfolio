@@ -1,7 +1,7 @@
 
 export default function HighlightQuoteWhile() {
     return (
-        <section className="bg-gray w-full my-24">
+        <section className="bg-primaryLight bg-opacity-5 w-full my-24">
             <div className="flex flex-row justify-center items-center max-w-7xl mx-auto lg:py-24 p-12">
                 <div className='flex flex-col flex-shrink-0 mr-24 hidden lg:block'>
                     <img

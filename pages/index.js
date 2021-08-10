@@ -9,6 +9,7 @@ import Link from "next/link";
 import Date from "../components/date";
 import HighlightQuoteHurff from "../components/highlight_quote_hurff";
 import HighlightContact from "../components/highlight_contact";
+import AboutHero from "../components/about-hero";
 
 
 
@@ -36,9 +37,9 @@ export default function Home({allPostsData}) {
         </Head>
         <main>
           <Hero/>
-          <HighlightContact/>
           <ClientLogos/>
-          <HighlightQuoteWhile/>
+          <AboutHero />
+          <HighlightQuoteHurff/>
           <section className='max-w-7xl mx-auto xl:px-0 px-12 '>
             {
               featuredPosts
@@ -46,15 +47,14 @@ export default function Home({allPostsData}) {
                   .map(featured =>
                       <div key={featured.id} className='flex lg:flex-row flex-col items-center '>
                         <div className='flex'>
-                          <Image
-                              priority
+                          <img
                               src={featured.imageSourceFeatured}
                               height={651}
                               width={1000}
                               alt={'Featured Insights'}
                           />
                         </div>
-                        <div className='flex lg:pl-8 lg:py-0 pt-8 pb-0'>
+                        <div className='flex lg:pl-12 lg:py-0 pt-8 pb-0'>
                           <div className='lg:mx-auto flex flex-col lg:justify-center'>
                             <div className='font-roboto text-3xl tracking-tighter '>
                               {featured.title}
@@ -71,7 +71,7 @@ export default function Home({allPostsData}) {
                       </div>
                   )}
           </section>
-          <HighlightQuoteHurff/>
+          <HighlightQuoteWhile/>
           <section className='max-w-7xl mx-auto xl:px-0 px-12 '>
             {
               featuredPosts
@@ -86,7 +86,7 @@ export default function Home({allPostsData}) {
                               alt={'featured portfolio project'}
                           />
                         </div>
-                        <div className='flex lg:pl-8 lg:py-0 pt-8 pb-0 lg:w-2/3'>
+                        <div className='flex lg:pr-12 lg:py-0 pt-8 pb-0 lg:w-2/3'>
                           <div className='lg:mx-auto flex flex-col lg:justify-center'>
                             <div className='font-roboto text-3xl tracking-tighter '>
                               {featured.title}
@@ -103,6 +103,7 @@ export default function Home({allPostsData}) {
                       </div>
                   )}
           </section>
+          <HighlightContact/>
         </main>
       </Layout>
   )
