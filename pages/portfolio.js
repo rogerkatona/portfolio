@@ -81,11 +81,11 @@ export default function Articles({allPostsData}) {
                                     </div>
 
                                 )}
-                            <section className="flex lg:flex-row flex-col lg:justify-center">
+                            <section className="flex lg:flex-row flex-col lg:justify-center my-12 ">
                             {allPostsData
                                 .filter(featured => featured.type === 'portfolio' && featured.isFeatured !== 'true')
                                 .map(({ id, date, title, description, bannerSMImageSource, alt, topic }) => (
-                                    <div key={id} className="flex flex-col my-12">
+                                    <div key={id} className="flex flex-col my-4">
                                         <div className='flex lg:pt-0'>
                                             <img
                                                 src={bannerSMImageSource}
