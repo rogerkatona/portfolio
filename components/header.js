@@ -43,7 +43,7 @@ export default function Header() {
 
 
                                 </div>
-                                <span className="text-2xl font-body uppercase tracking-tight text-white pl-3 hover:text-sand ">
+                                <span className="text-2xl font-banner uppercase tracking-wide text-white md:pl-3 hover:text-sand ">
                                     Roger Katona
                                 </span>
                             </div>

@@ -61,57 +61,54 @@ export default function Articles({allPostsData}) {
                         <section className = "w-full">
                                 {featuredPosts
                                     .map(featured =>
-                                        <div key={featured.id} className='flex lg:flex-row flex-col'>
-                                            <div className='lg:pr-12 pr-6'>
-                                                        <Link href={`/articles/${featured.id}`}>
-                                                            <a>
-                                                                 <div className='font-roboto text-2xl text-link hover:underline'>{featured.title}</div>
-                                                            </a>
-                                                        </Link>
-                                                        <div className='font-banner text-xs'>
-                                                            <Date dateString={featured.date} />
-                                                        </div>
-                                                        <div className="my-2"> {featured.description} </div>
-                                                        <div className=""> <span className="font-bold pr-2 ">Topics:</span>{featured.topic} </div>
-                                            </div>
-                                            <div className='flex min-w-max'>
+                                        <div key={featured.id} className='flex flex-col'>
+                                            <div className='flex '>
                                                 <img
-                                                    src={featured.bannerSMImageSource}
-                                                    height={141}
-                                                    width={217}
+                                                    src={featured.bannerImageSource}
+                                                    height={651}
+                                                    width={1626}
                                                     alt={featured.alt}
                                                 />
                                             </div>
+                                            <div className="mt-3">
+                                                <Link
+                                                    href={`/portfolio/${featured.id}`}>
+                                                    <a>
+                                                        <div className='font-roboto text-3xl font-medium text-link hover:underline'>{featured.title}</div>
+                                                    </a>
+                                                </Link>
+                                                <div className="pt-1">{featured.description} </div>
+                                            </div>
                                         </div>
-
                             )}
-                            <hr className={'my-6'}/>
+                            <section className="flex lg:flex-row flex-col lg:justify-center my-12">
                                 {allPostsData
                                     .filter(featured => featured.type === 'articles' && featured.isFeatured !== 'true')
                                     .map(({ id, date, title, description, bannerSMImageSource, alt, topic }) => (
-                                        <div key={id} className="flex lg:flex-row flex-col lg:justify-between mb-6">
-                                            <div className='lg:pr-12 pr-6'>
-                                                <Link href={`/articles/${id}`}>
-                                                    <a>
-                                                        <div className='font-roboto text-2xl text-link hover:underline'>{title}</div>
-                                                    </a>
-                                                </Link>
-                                                <div className='font-banner text-xs'>
-                                                    <Date dateString={date} />
-                                                </div>
-                                                <div className="my-2">{description} </div>
-                                                <div className=""> <span className="font-bold pr-2 ">Topics:</span>{topic} </div>
-                                            </div>
-                                            <div className='flex lg:min-w-max lg:pt-0'>
+                                        <div key={id} className="flex flex-col my-4">
+                                            <div className='flex lg:pt-0'>
                                                 <img
                                                     src={bannerSMImageSource}
-                                                    height={141}
-                                                    width={217}
                                                     alt={alt}
                                                 />
                                             </div>
+                                            <div className="mt-2">
+                                                <Link href={`/portfolio/${id}`}>
+                                                    <a>
+                                                        <div className='font-roboto text font-medium text-link hover:underline'>{title}</div>
+                                                    </a>
+                                                </Link>
+                                                <div className='font-banner text-xs '>
+                                                    <Date dateString={date} />
+                                                </div>
+                                                {/*<div className='text-xs'>*/}
+                                                {/*    <span className="font-medium">Topics:</span> {topic}*/}
+                                                {/*</div>*/}
+                                            </div>
+
                                         </div>
                                     ))}
+                        </section>
                         </section>
                     </section>
                 </section>

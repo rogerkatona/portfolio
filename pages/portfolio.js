@@ -77,7 +77,6 @@ export default function Articles({allPostsData}) {
                                             </Link>
                                             <div className="pt-1"> <span className="pr-2 font-bold">Project Brief:</span>{featured.description} </div>
                                         </div>
-
                                     </div>
 
                                 )}

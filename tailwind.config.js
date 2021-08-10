@@ -165,7 +165,7 @@ module.exports = {
       'serif': ['ui-serif', 'Georgia'],
       'mono': ['ui-monospace', 'SFMono-Regular'],
       'display': ['Oswald'],
-      'body': ['Open Sans'],
+      'body': ['Helvetica'],
       'banner': ['Trebuchet MS'],
       'roboto': ['Roboto'],
     },
