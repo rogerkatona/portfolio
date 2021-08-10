@@ -2,7 +2,7 @@
 export default function Hero({ children, home }) {
     return (
         <section className="bg-primaryLight bg-hero-pattern bg-no-repeat bg-cover">
-            <div className="flex flex-col items-center justify-center max-w-7xl mx-auto lg:h-screen80vh h-screen lg:px-0 px-12">
+            <div className="flex flex-col items-center justify-center max-w-7xl mx-auto lg:h-screen80vh h-screen65vh lg:px-0 px-12">
 
                 <div className="">
                     <svg
