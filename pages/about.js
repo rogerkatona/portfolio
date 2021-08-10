@@ -4,6 +4,8 @@ import HighlightContact from "../components/highlight_contact";
 import AboutHero from "../components/about-hero";
 import QuoteBourget from "../components/portfolioAssets/quote_bourget";
 import Experience from "../components/experience";
+import AboutPieChart from "../components/about-pieChart";
+import HighlightQuoteHurff from "../components/highlight_quote_hurff";
 
 
 
@@ -29,7 +31,13 @@ export default function Contact() {
             <AboutHero />
             <QuoteBourget/>
             <Experience/>
+            <AboutPieChart/>
+            <div className="my-12">
+                <HighlightQuoteHurff/>
+            </div>
+
             <HighlightContact/>
+
 
         </Layout>
     )

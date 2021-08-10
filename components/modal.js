@@ -50,11 +50,11 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
                         </button>
                     </div>
                 </header>
-                <div className="flex flex-row">
-                    <div className="flex md:bg-bg-contactModal h-screen p-4 items-center">
-                        <div className="md:flex md:flex-col md:p-8 md:block hidden">
+                <div className="flex md:flex-row flex-col max-w-7xl">
+                    <div className="flex bg-bg-contactModal md:h-screen p-4 items-center mx-auto">
+                        <div className="p-8 mt-12">
                             <div  className="text-medGray">
-                                <div className="flex flex-col md:pb-12">
+                                <div className="flex flex-col pb-12">
                                     <p className="text-lightGray">Let&apos;s connect. I look forward to getting to know you and working on something great!</p>
                                 </div>
                                 <div className="flex flex-col">
@@ -66,7 +66,7 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
                         </div>
                     </div>
 
-                    <div className="p-16 w-full flex flex-col justify-center">
+                    <div className="p-12 w-full flex flex-col justify-center">
                         <Form />
                     </div>
                 </div>

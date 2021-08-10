@@ -39,7 +39,9 @@ export default function Home({allPostsData}) {
           <Hero/>
           <ClientLogos/>
           <AboutHero />
-          <HighlightQuoteHurff/>
+          <div className="bg-primaryLight bg-opacity-5 w-full my-24">
+            <HighlightQuoteHurff/>
+          </div>
           <section className='max-w-7xl mx-auto xl:px-0 px-12 '>
             {
               featuredPosts
