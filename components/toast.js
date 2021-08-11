@@ -1,7 +1,7 @@
 import global from "../lib/global";
 
 
-export default function Toast() {
+export default function OtherToast() {
 
     return (
         <>

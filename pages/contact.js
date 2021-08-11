@@ -2,9 +2,6 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import  { Form } from "../components/form";
 import { useRef } from 'react'
-import Toast from "../components/toast";
-import Modal from "../components/modal";
-// import global from "../lib/global"
 
 export const Contact = () => {
 
@@ -16,8 +13,7 @@ export const Contact = () => {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-                {/*<p>Status: {global.form.showSuccess}</p>*/}
-                {/*<Toast/>*/}
+
                     <div className="max-w-7xl mx-auto xl:px-0 px-12 min-h-screen">
                             <header className='my-12'>
                                 <div id="headlineText" className='text-6xl text-gray-700 font-light'>
@@ -33,6 +29,8 @@ export const Contact = () => {
                                     <p className="text-lightGray text-2xl md:pb-6 pb-2">I look forward to getting to know you and working on something great!</p>
                                 </div>
                                 <div className="text-lightGray">
+                                    <div className="">Roger Katona</div>
+                                    <div>roger.katona@blueprospect.com</div>
                                     <div>904-450-5173</div>
                                 </div>
                             </div>

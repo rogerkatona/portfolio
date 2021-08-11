@@ -1,50 +1,55 @@
 import {useState} from "react";
 
 
+
 export const Form = ({ initialRef}) => {
 
-    const [submitState, setSubmitState] = useState()
-    const [formState, setFormState] = useState({
+    const initialState = {
         name: '',
         email: '',
-        message: ''
-    })
+        contactMessage: ''
+    };
 
-    const [toast, setToast] = useState({
-        title: '',
+    const [formState, setFormState] = useState(initialState);
+    const [toastMessage, setToastMessage] = useState({
         type: '',
         message: ''
-    })
-
-
+    });
 
     const clearFormState = () => {
-        Array.from(document.querySelectorAll("input")).forEach(
-            input => (input.value = "")
-        );
-        this.setState({setFormState: {}});
-    }
-
+        setFormState({ ...initialState });
+    };
 
     const handleContactFormSubmit = async (e) => {
         e.preventDefault()
-        const { name, email } = formState
-        const { title, type, message } = toast
+        const URL = "https://5zk902u879.execute-api.us-east-1.amazonaws.com/contactForm";
+        const { name, email} = formState
+        const { message } = toastMessage
         if (name && email) {
             try {
-                console.log('if an error occurs, will submitting form')
-                setToast({type: "success" });
-                console.log(toast.type);
+                setToastMessage({message:(
+                    <div className="text-green-800 absolute bottom-0 -mb-10">
+                        Thank you for reaching out to me.  I'll respond to you shortly!  Have a great day.
+                    </div>
+                    )})
                 clearFormState()
             } catch (e) {
-                console.log('if an error occurs, will submitting form')
+                setToastMessage({message:(
+                        <div className="text-danger absolute bottom-0 -mb-10">
+                            Deepest apologies.  There was an error with your request.  Please try again later.
+                        </div>
+                    )})
             }
         } else {
-            console.log('enter that email and name need to be filled out')
-
-
+            setToastMessage({message:(
+                    <div className="text-danger absolute bottom-0 -mb-10">
+                        Please verify all fields are filled out.
+                    </div>
+                )})
         }
-    }
+    };
+
+
 
     return (
         <>
@@ -52,9 +57,7 @@ export const Form = ({ initialRef}) => {
             <div className="flex flex-col relative">
 
                 {/*show message to user*/}
-                <div className={`${toast ? 'block' : 'hidden'} text-danger absolute bottom-0 -mb-10 `}>
-                    Please verify all fields are filled out.
-                </div>
+                {toastMessage.message}
 
                 <div className="flex flex-col">
                     <label
@@ -96,20 +99,20 @@ export const Form = ({ initialRef}) => {
                         <textarea
                             className="w-full border border-darkGray py-3 px-4 mb-4"
                             rows="4"
-                            value={formState.message}
+                            value={formState.contactMessage}
                             onChange={(e) =>
-                                setFormState({ ...formState, message: e.target.value })
+                                setFormState({ ...formState, contactMessage: e.target.value })
                             }
                         />
                         </div>
                     </div>
                 </div>
                 <div className="">
-                            <button
-                                type="submit"
-                                className="hover:bg-secondary text-white text-2xl uppercase hover:text-gray-50 py-4 px-8 bg-link">
-                                Submit
-                            </button>
+                    <button
+                        type="submit"
+                        className="hover:bg-secondary text-white text-2xl uppercase hover:text-gray-50 py-4 px-8 bg-link">
+                        Submit
+                    </button>
                 </div>
             </div>
         </form>
