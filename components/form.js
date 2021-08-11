@@ -28,6 +28,14 @@ export const Form = ({ initialRef}) => {
             try {
                 fetch('https://5zk902u879.execute-api.us-east-1.amazonaws.com/contactForm', {
                     method: 'POST',
+                    headers: {
+                        'Accept': 'application/json, text/plain, */*',
+                        "Access-Control-Allow-Headers" : "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
+                        'Content-Type': 'application/json; charset=utf-8',
+                        'Access-Control-Allow-Origin' : '*',
+                        "Access-Control-Allow-Methods" : "OPTIONS,POST",
+                        "X-Requested-With" : "*"
+                    },
                     body: JSON.stringify(formState)
                 }).then((res) => {
                     if (res.status === 200) {
