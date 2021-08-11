@@ -28,10 +28,6 @@ export const Form = ({ initialRef}) => {
             try {
                 fetch('https://5zk902u879.execute-api.us-east-1.amazonaws.com/contactForm', {
                     method: 'POST',
-                    headers: {
-                        'Accept': 'application/json, text/plain, */*',
-                        'Content-Type': 'application/json; charset=utf-8'
-                    },
                     body: JSON.stringify(formState)
                 }).then((res) => {
                     if (res.status === 200) {
