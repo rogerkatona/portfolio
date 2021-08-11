@@ -22,17 +22,27 @@ export const Form = ({ initialRef}) => {
 
     const handleContactFormSubmit = async (e) => {
         e.preventDefault()
-        const URL = "https://5zk902u879.execute-api.us-east-1.amazonaws.com/contactForm";
         const { name, email} = formState
         const { message } = toastMessage
         if (name && email) {
             try {
-                setToastMessage({message:(
-                    <div className="text-green-800 absolute bottom-0 -mb-10">
-                        Thank you for reaching out to me.  I'll respond to you shortly!  Have a great day.
-                    </div>
-                    )})
-                clearFormState()
+                fetch('https://5zk902u879.execute-api.us-east-1.amazonaws.com/contactForm', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json, text/plain, */*',
+                        'Content-Type': 'application/json; charset=utf-8'
+                    },
+                    body: JSON.stringify(formState)
+                }).then((res) => {
+                    if (res.status === 200) {
+                        setToastMessage({message:(
+                                <div className="text-green-800 absolute bottom-0 -mb-10">
+                                    Thank you for reaching out to me.  I'll respond to you shortly!  Have a great day.
+                                </div>
+                            )})
+                        clearFormState()
+                    }
+                })
             } catch (e) {
                 setToastMessage({message:(
                         <div className="text-danger absolute bottom-0 -mb-10">
