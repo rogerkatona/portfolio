@@ -10,7 +10,7 @@ import HighlightQuoteHurff from "../components/highlight_quote_hurff";
 
 
 
-export default function Contact() {
+export default function About() {
     return (
         <Layout home>
             <Head>

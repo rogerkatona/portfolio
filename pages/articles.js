@@ -72,7 +72,7 @@ export default function Articles({allPostsData}) {
                                             </div>
                                             <div className="mt-3">
                                                 <Link
-                                                    href={`/portfolio/${featured.id}`}>
+                                                    href={`/articles/${featured.id}`}>
                                                     <a>
                                                         <div className='font-roboto text-3xl font-medium text-link hover:underline'>{featured.title}</div>
                                                     </a>

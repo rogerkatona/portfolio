@@ -57,7 +57,7 @@ const ModalAboutVideo = ({ isShowing, hide }) => isShowing ? ReactDOM.createPort
                             height={360}
                             controls={true}
                             playing={true}
-                            url="https://vimeo.com/583540354"
+                            url="https://youtu.be/3Vrft6FiLvw"
                         />
                         <div>&nbsp;</div>
                     </div>
