@@ -6,7 +6,8 @@ export const Form = ({ initialRef}) => {
     const initialState = {
         name: '',
         email: '',
-        contactMessage: ''
+        contactMessage: '',
+        location:''
     };
 
     const [formState, setFormState] = useState(initialState);
@@ -15,20 +16,23 @@ export const Form = ({ initialRef}) => {
         message: ''
     });
 
+
+
     const clearFormState = () => {
         setFormState({ ...initialState });
     };
 
     const handleContactFormSubmit = async (e) => {
         e.preventDefault()
-
+        const location = "rogerkatona.com"
         const endpoint =
             "https://ke37371vfe.execute-api.us-east-1.amazonaws.com/default/sendContactEmail";
         // We use JSON.stringify here so the data can be sent as a string via HTTP
         const body = JSON.stringify({
             senderName: formState.name,
             senderEmail: formState.email,
-            message: formState.contactMessage
+            message: formState.contactMessage,
+            senderLocation: location
         });
         const requestOptions = {
             method: "POST",
@@ -46,8 +50,8 @@ export const Form = ({ initialRef}) => {
                                     <div className="text-green-800 absolute bottom-0 -mb-10">
                                         Thank you for reaching out to me.  I&apos;ll respond to you shortly!  Have a great day.
                                     </div>
-                                )})
-                            clearFormState()
+                                )});
+                            clearFormState();
                         }
                     })
             } catch (e) {
