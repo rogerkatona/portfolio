@@ -8,11 +8,11 @@ export default function HighlightContact() {
         <>
 
 
-            <section className="bg-primaryLight bg-opacity-5 w-full ">
-                <div className="max-w-7xl mx-auto xl:px-0 px-12 lg:py-24 p-12 mt-24  ">
+            <section className="">
+                <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12">
                 <div className="flex flex-row justify-center">
                     <div className="">
-                        <div className="lg:text-3xl text-2xl text-center ">
+                        <div className="lg:text-3xl text-2xl text-center">
                                 Reach out.  I want to hear from you.
                         </div>
                         <div className="flex justify-center pt-6">

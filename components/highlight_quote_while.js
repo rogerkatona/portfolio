@@ -1,9 +1,9 @@
 
 export default function HighlightQuoteWhile() {
     return (
-        <section className="bg-primaryLight bg-opacity-5 w-full my-24">
-            <div className="flex flex-row justify-center items-center max-w-7xl mx-auto lg:py-24 p-12">
-                <div className='flex flex-col flex-shrink-0 mr-24 hidden lg:block'>
+        <section className="w-full xl:px-0 md:px-12 px-6 xl:py-24 py-12">
+            <div className="flex flex-row justify-center items-center max-w-7xl mx-auto ">
+                <div className='flex flex-col flex-shrink-0 pr-12 hidden lg:block'>
                     <img
                         src="/image/quote-graphic.png"
                         height={198}
@@ -11,12 +11,12 @@ export default function HighlightQuoteWhile() {
                         alt={'simple quote graphic'}
                     />
                 </div>
-                <div className="flex flex-col my-12">
+                <div className="flex flex-col">
                 <span className="lg:text-3xl text-2xl">
                               &quot;While it’s true a website can perform many functions, it must still perform your websites primary task above and if
                               necessary at the cost of all others.&quot;
                 </span>
-                    <span className="font-bold text-sm mt-2">
+                    <span className="font-bold text-sm pt-2">
                         Roger Katona
                     </span>
                 </div>

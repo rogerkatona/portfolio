@@ -4,7 +4,6 @@ import ClientLogos from '../components/clientLogos'
 import Hero from '../components/hero'
 import HighlightQuoteWhile from "../components/highlight_quote_while";
 import { getSortedPostsData } from '../lib/posts'
-import Image from "next/image";
 import Link from "next/link";
 import Date from "../components/date";
 import HighlightQuoteHurff from "../components/highlight_quote_hurff";
@@ -39,10 +38,11 @@ export default function Home({allPostsData}) {
           <Hero/>
           <ClientLogos/>
           <AboutHero />
-          <div className="bg-primaryLight bg-opacity-5 w-full my-24">
+          <div className="bg-primaryLight bg-opacity-5 w-full">
             <HighlightQuoteHurff/>
           </div>
-          <section className='max-w-7xl mx-auto xl:px-0 px-12 '>
+          <section className='bg-primary bg-opacity-5 w-full'>
+            <div className=" max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12">
             {
               featuredPosts
                   .filter(featured => featured.type === 'articles')
@@ -56,7 +56,7 @@ export default function Home({allPostsData}) {
                               alt={'Featured Insights'}
                           />
                         </div>
-                        <div className='flex lg:pl-12 lg:py-0 pt-8 pb-0'>
+                        <div className='flex lg:pl-12 pt-6 '>
                           <div className='lg:mx-auto flex flex-col lg:justify-center'>
                             <div className='font-roboto text-3xl tracking-tighter '>
                               {featured.title}
@@ -72,9 +72,11 @@ export default function Home({allPostsData}) {
                         </div>
                       </div>
                   )}
+            </div>
           </section>
           <HighlightQuoteWhile/>
-          <section className='max-w-7xl mx-auto xl:px-0 px-12 '>
+          <section className='bg-primary bg-opacity-5 w-full'>
+            <div className=" max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12">
             {
               featuredPosts
                   .filter(featured => featured.type === 'portfolio')
@@ -88,7 +90,7 @@ export default function Home({allPostsData}) {
                               alt={'featured portfolio project'}
                           />
                         </div>
-                        <div className='flex lg:pr-12 lg:py-0 pt-8 pb-0 lg:w-2/3'>
+                        <div className='flex pt-6 lg:w-2/3'>
                           <div className='lg:mx-auto flex flex-col lg:justify-center'>
                             <div className='font-roboto text-3xl tracking-tighter '>
                               {featured.title}
@@ -104,6 +106,7 @@ export default function Home({allPostsData}) {
                         </div>
                       </div>
                   )}
+            </div>
           </section>
           <HighlightContact/>
         </main>

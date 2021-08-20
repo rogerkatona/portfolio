@@ -6,7 +6,7 @@ description: 'Design an eCommerce application for a subsidiary brand of McKesson
 isFeatured: 'true'
 imageSourceFeatured: '/image/bgSM-simply-medical.png'
 bannerImageSource: '/image/bgLG-simply-medical.png'
-bannerSMImageSource: '/image/image/bgSM-simply-medical.png'
+bannerSMImageSource: '/image/bgSM-simply-medical.png'
 topic: 'eCommerce Design | Usability Research | UI/UX Design'
 author: 'Roger Katona'
 authorDescription: 'UI/UX Designer'

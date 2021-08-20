@@ -62,9 +62,13 @@ export default function Articles({allPostsData}) {
                                     <div key={featured.id} className='flex flex-col'>
                                         <div className='flex '>
                                             <img
+                                                className="lg:block hidden"
                                                 src={featured.bannerImageSource}
-                                                height={651}
-                                                width={1626}
+                                                alt={featured.alt}
+                                            />
+                                            <img
+                                                className="lg:hidden block"
+                                                src={featured.bannerSMImageSource}
                                                 alt={featured.alt}
                                             />
                                         </div>

@@ -2,7 +2,7 @@
 export default function ClientLogos({ children, type }) {
     return (
         <div className="mx-auto max-w-7xl">
-            <section className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-1 items-center gap-10 justify-items-center my-24 xl:mx-0 mx-12">
+            <section className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-1 items-center gap-10 justify-items-center xl:px-0 md:px-12 px-6 xl:py-24 py-12">
                 <div>
                     <img
                         src="image/logo-fblue.png"
