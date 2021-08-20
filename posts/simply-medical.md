@@ -43,3 +43,8 @@ process our team could ensure we flattened the architecture as much as possible 
 
 ## Wireframe the pages and workflows based on IA
 ![Simply Medical logo design](/image/postGraphic-simplyMedicalC.png)
+
+---
+
+## Deliver to the development team fully designed pages in an interactive prototype
+![Simply Medical logo design](/image/postGraphic-simplyMedicalF.png)
