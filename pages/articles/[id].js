@@ -39,34 +39,31 @@ export default function Post({ postData }) {
                 <meta property="og:image" content={postData.ogImage} />
             </Head>
 
-            <div className="max-w-7xl mx-auto xl:px-0 px-12 min-h-screen">
-                <section className='mt-12'>
-                    <header className='mb-12'>
+            <div className="max-w-7xl mx-auto ">
+                <section className=''>
+                    <header className='xl:px-0 md:px-12 px-6 xl:py-24 py-12'>
                         <div id="headlineText" className='text-6xl text-gray-700 font-light'>
                             Articles
                         </div>
-                        <div id="subHeadlineText" className='text-base text-gray-500 mt-2'>
+                        <div id="subHeadlineText" className='text-base text-gray-500 '>
                             A collection of articles to teach, inspire, and elevate our work as web designers and front-end developers.
                         </div>
                     </header>
-                    <section className="flex flex-row justify-between space-x-6">
-                        <section className='lg:block hidden '>
-                            <span className={'font-bold'}>Topics:</span>
-                            <Topics topicItems={topicItems}/>
-                        </section>
+                    <section className="w-full bg-opacity-5 bg-primaryLight">
 
-                        <section className="lg:w-2/3">
+                        <section className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12">
                             <div className='font-roboto text-2xl '>{postData.title}</div>
-                            <div className="my-2"> {postData.description} </div>
+                            <div className="py-2"> {postData.description} </div>
                             <div className=""> <span className="font-bold pr-2 ">Topics:</span>{postData.topic} </div>
-                            <div className='font-banner text-xs mt-4 '>
+                            <div className='font-banner text-xs pt-2 '>
                                 <Date dateString={postData.date} />
                             </div>
                              <hr/>
 
                                 <section className='flex flex-row items-center'>
-                                    <div className='mr-4'>
+                                    <div className='md:pr-4'>
                                         <img
+                                            className="md:block hidden"
                                             src={postData.authorImageSource}
                                             height={80}
                                             width={80}
@@ -84,10 +81,14 @@ export default function Post({ postData }) {
                                     <section>
                                         <div className='my-8'>
                                             <img
+                                                className="lg:block hidden"
                                                 src={postData.bannerImageSource}
-                                                height={401}
-                                                width={1626}
-                                                alt="Post banner"
+                                                alt={postData.alt}
+                                            />
+                                            <img
+                                                className="lg:hidden block"
+                                                src={postData.bannerSMImageSource}
+                                                alt={postData.alt}
                                             />
                                         </div>
                                     </section>
