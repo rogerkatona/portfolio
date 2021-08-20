@@ -2,10 +2,14 @@ import Layout from '../../components/layout'
 import {getAllPostIds, getPostData} from '../../lib/posts'
 import Head from "next/head";
 import Date from "../../components/date";
+import Topics from "../../components/articleTopics";
+import topicItems from "../../data/topicItems";
+import SocialMediaItem from "../../components/socialMediaItem";
+import socialMediaItems from "../../data/socialMediaItems";
 import Link from "next/link";
 
 export async function getStaticProps({ params }) {
-    // Add the "await" keyword like this:f
+    // Add the "await" keyword like this:
     const postData = await getPostData(params.id)
     return {
         props: {
@@ -34,101 +38,66 @@ export default function Post({ postData }) {
                 <meta property="og:description" content={postData.description} />
                 <meta property="og:image" content={postData.ogImage} />
             </Head>
-            <article className="bg-primaryLight">
-                <div className="max-w-7xl mx-auto xl:px-0 px-12 min-h-screen text-white" >
-                    <h1 className="font-banner text-2xl font-bold">{postData.title}</h1>
-                    <div className="text-lightGray mt-4"> <span className="font-bold pr-2 text-white">Summary:</span>{postData.description} </div>
-                    <div className="text-lightGray"> <span className="font-bold pr-2 text-white">Topics:</span>{postData.tags} </div>
-                    <div className='font-banner text-xs mb-4 mt-4 text-lightGray'>
-                        <Date dateString={postData.date} />
-                    </div>
-                    <hr/>
 
-                    <section className='flex flex-row items-center m-4 ml-0 ' >
-                        <section className='flex items-center md:w-72 w-96'>
-                            <div className='mr-4'>
-                                <img
-                                    src={postData.authorImageSource}
-                                    height={80}
-                                    width={80}
-                                    alt="author image - Roger Katona"
-                                />
-                            </div>
-                            <div className=''>
-                                <div className='font-medium'>{postData.author}</div>
-                                <div className='text-lightGray text-xs'>{postData.authorDescription}</div>
-                            </div>
-                        </section>
-                        <section className='flex flex-row justify-end w-full'>
-                            <div className='mr-2'>
-                                <Link
-                                    href={`${postData.authorLinkedInURL}`}>
-                                    <a>
-                                        <img
-                                            src='/image/icon-linkedIn.png'
-                                            height={32}
-                                            width={32}
-                                            alt="icon linkedIn"
-                                        />
-                                    </a>
-                                </Link>
-                            </div>
-                            <div className='mr-2'>
-                                <Link
-                                    href={`${postData.authorInstagramURL}`}>
-                                    <a>
-                                        <img
-                                            src='/image/icon-Instagram.png'
-                                            height={32}
-                                            width={32}
-                                            alt="icon Instagram"
-                                        />
-                                    </a>
+            <div className="">
+                <section className=''>
+                    <header className='max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12'>
+                        <div id="headlineText" className='text-6xl text-gray-700 font-light'>
+                            Portfolio
+                        </div>
+                        <div id="subHeadlineText" className='text-base text-gray-500 mt-2'>
+                            For over 15 years, I have designed digital application products that were ahead of their time, across an array of platforms, for the world’s largest, most influential brands, mid-sized companies and extraordinary startups.
+                        </div>
+                    </header>
+                    <section className="w-full bg-opacity-5 bg-primaryLight">
+                        <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12">
+                            <div className='font-roboto text-2xl '>{postData.title}</div>
+                            <div className="py-2"> {postData.description} </div>
+                            <div className=""> <span className="font-bold pr-2 ">Topics:</span>{postData.topic} </div>
 
-                                </Link>
-                            </div>
-                            <div>
-                                <Link
-                                    href={`${postData.authorTwitterURL}`}>
-                                    <a>
-                                        <img
-                                            src='/image/icon-Twitter.png'
-                                            height={32}
-                                            width={32}
-                                            alt="icon twitter"
-                                        />
-                                    </a>
+                            <hr/>
 
-                                </Link>
-                            </div>
-                        </section>
+                            <section className='flex flex-row items-center'>
+                                <div className='md:pr-4'>
+                                    <img
+                                        className="md:block hidden"
+                                        src={postData.authorImageSource}
+                                        height={80}
+                                        width={80}
+                                        alt="author image - Roger Katona"
+                                    />
+                                </div>
+                                <div className='min-w-max'>
+                                    <div className='font-medium'>{postData.author}</div>
+                                    <div className='text-xs'>{postData.authorDescription}</div>
+                                </div>
+                                <div className='flex flex-row justify-end w-full'>
+                                    <SocialMediaItem socialMediaItems={socialMediaItems}/>
+                                </div>
+                            </section>
+                            <section>
+                                <div className='my-8'>
+                                    <img
+                                        className="lg:block hidden"
+                                        src={postData.bannerImageSource}
+                                        alt={postData.alt}
+                                    />
+                                    <img
+                                        className="lg:hidden block"
+                                        src={postData.bannerSMImageSource}
+                                        alt={postData.alt}
+                                    />
+                                </div>
+                            </section>
 
-                    </section>
-                    <section>
-                        <div className='md:mb-6'>
-                            <img
-                                src={postData.bannerImageSource}
-                                height={401}
-                                width={1626}
-                                alt="Post banner"
-                            />
+                            <section className='mb-12'>
+                                <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+                            </section>
                         </div>
                     </section>
-                    <div className='flex flex-row '>
-                        <section className='mb-12'>
-                            <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-                        </section>
-                        {/*<section className='w-1/2 ml-12 mt-8 text-xs lg:block sm:hidden'>*/}
-                        {/*    <div>*/}
-                        {/*        <div>Table of Contents</div>*/}
-                        {/*        <div>{postData.headline1}</div>*/}
-                        {/*        <div>{postData.headline2}</div>*/}
-                        {/*        <div>{postData.headline3}</div>*/}
-                        {/*    </div>*/}
-                        {/*</section>*/}
-                    </div>
-                </div>
-            </article>
+                </section>
+            </div>
+
         </Layout>
     )
 }

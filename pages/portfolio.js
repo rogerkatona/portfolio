@@ -17,7 +17,7 @@ export async function getStaticProps() {
     }
 }
 
-export default function Articles({allPostsData}) {
+export default function Portfolio({allPostsData}) {
 
 
     const [active, setActive] = useState(false)
@@ -51,7 +51,6 @@ export default function Articles({allPostsData}) {
                         </div>
                         <div id="subHeadlineText" className='text-base text-gray-500 mt-2'>
                             For over 15 years, I have designed digital application products that were ahead of their time, across an array of platforms, for the world’s largest, most influential brands, mid-sized companies and extraordinary startups.
-
                         </div>
                     </header>
                     <section className='bg-primaryLight bg-opacity-5 w-full xl:px-0 md:px-12 px-6 xl:py-24 py-12'>
@@ -72,14 +71,11 @@ export default function Articles({allPostsData}) {
                                     </div>
                                     <div className="pt-2">
                                         <Link
-                                            href={`/articles/${featured.id}`}>
+                                            href={`/portfolio/${featured.id}`}>
                                             <a>
                                                 <div className='font-roboto text-3xl font-medium text-link hover:underline'>{featured.title}</div>
                                             </a>
                                         </Link>
-                                        <div className='font-banner text-xs '>
-                                            <Date dateString={featured.date} />
-                                        </div>
                                         <div className="pt-2">{featured.description} </div>
                                     </div>
                                 </div>
@@ -102,9 +98,6 @@ export default function Articles({allPostsData}) {
                                                 <div className='font-roboto text font-medium text-link hover:underline truncate'>{title}</div>
                                             </a>
                                         </Link>
-                                        <div className='font-banner text-xs '>
-                                            <Date dateString={date} />
-                                        </div>
                                     </div>
 
                                 </div>
