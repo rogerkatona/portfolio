@@ -90,7 +90,7 @@ export default function Home({allPostsData}) {
                               alt={'featured portfolio project'}
                           />
                         </div>
-                        <div className='flex pt-6 lg:w-2/3'>
+                        <div className='flex pt-6 pr-12 lg:w-2/3'>
                           <div className='lg:mx-auto flex flex-col lg:justify-center'>
                             <div className='font-roboto text-3xl tracking-tighter '>
                               {featured.title}

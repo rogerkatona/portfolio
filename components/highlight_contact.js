@@ -6,8 +6,6 @@ export default function HighlightContact() {
     const {isShowing, toggle} = useModal();
     return (
         <>
-
-
             <section className="">
                 <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12">
                 <div className="flex flex-row justify-center">

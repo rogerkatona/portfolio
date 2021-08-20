@@ -11,12 +11,12 @@ export default function Header() {
 
     return (
         <header className="bg-primaryLight">
-            <div className="lg:flex lg:flex-row lg:justify-between lg:items-center lg:mx-auto lg:max-w-7xl py-4 xl:px-0 px-12">
+            <div className="lg:flex lg:flex-row lg:justify-between lg:items-center lg:mx-auto lg:max-w-7xl xl:px-0 md:px-12 px-6 py-4">
                 <section>
                     <Link href='/'>
                         <a>
                             <div className="flex flex-row items-center">
-                                <div className="md:block hidden">
+                                <div className="">
 
 
                                     <svg
@@ -43,7 +43,7 @@ export default function Header() {
 
 
                                 </div>
-                                <span className="text-2xl font-banner uppercase tracking-wide text-white md:pl-3 hover:text-sand ">
+                                <span className="md:text-2xl text-xl font-banner uppercase tracking-wide text-white hover:text-sand md:pl-6 pl-2">
                                     Roger Katona
                                 </span>
                             </div>
@@ -51,7 +51,7 @@ export default function Header() {
                     </Link>
                 </section>
                 <div>
-                    <section className="absolute right-10 top-5">
+                    <section className="absolute md:right-10 right-4 top-6">
                         <button
                             className="lg:hidden text-secondary hover:text-primary focus:appearance-none border border-transparent"
                             onClick={handleClick}>

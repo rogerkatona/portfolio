@@ -14,8 +14,8 @@ export default function About() {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-                <div className="max-w-7xl mx-auto  xl:px-0 px-12">
-                    <header className='py-12'>
+                <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12">
+                    <header className=''>
                             <div id="headlineText" className='text-6xl text-gray-700 font-light'>
                                 About
                             </div>
@@ -24,18 +24,10 @@ export default function About() {
                             </div>
                         </header>
                 </div>
-            <AboutHero />
-            <HighlightQuoteBourget/>
-            <HighlightAboutExperience/>
-            <div className="my-12">
+                <AboutHero />
                 <HighlightQuoteHurff/>
-            </div>
-            <div className="bg-primaryLight bg-opacity-5 w-full">
+                <HighlightAboutExperience/>
                 <HighlightContact/>
-            </div>
-
-
-
         </Layout>
     )
 }
