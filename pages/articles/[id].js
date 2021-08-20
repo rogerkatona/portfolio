@@ -39,9 +39,9 @@ export default function Post({ postData }) {
                 <meta property="og:image" content={postData.ogImage} />
             </Head>
 
-            <div className="max-w-7xl mx-auto ">
+            <div className="">
                 <section className=''>
-                    <header className='xl:px-0 md:px-12 px-6 xl:py-24 py-12'>
+                    <header className='max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12'>
                         <div id="headlineText" className='text-6xl text-gray-700 font-light'>
                             Articles
                         </div>
@@ -50,7 +50,6 @@ export default function Post({ postData }) {
                         </div>
                     </header>
                     <section className="w-full bg-opacity-5 bg-primaryLight">
-
                         <section className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12">
                             <div className='font-roboto text-2xl '>{postData.title}</div>
                             <div className="py-2"> {postData.description} </div>
@@ -96,21 +95,6 @@ export default function Post({ postData }) {
                                     <section className='mb-12'>
                                         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
                                     </section>
-                        </section>
-                        <section className='lg:block hidden '>
-                            <div className=''>
-                                <Link href='/campaign/website-analysis'>
-                                    <a>
-                                    <img
-                                        src="/image/ad-websiteAnalysis.png"
-                                        height={498}
-                                        width={251}
-                                        alt="Website analysis graphic"
-                                    />
-                                    </a>
-                                </Link>
-
-                            </div>
                         </section>
                     </section>
                 </section>

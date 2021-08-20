@@ -11,8 +11,8 @@ export default function Header() {
 
     return (
         <header className="bg-primaryLight">
-            <div className="lg:flex lg:flex-row lg:justify-between lg:items-center lg:mx-auto lg:max-w-7xl xl:px-0 md:px-12 px-6 py-4">
-                <section>
+            <div className="lg:flex lg:flex-row lg:justify-between lg:items-center lg:mx-auto lg:max-w-7xl ">
+                <section className="xl:px-0 md:px-12 px-6 py-4">
                     <Link href='/'>
                         <a>
                             <div className="flex flex-row items-center">
@@ -71,10 +71,10 @@ export default function Header() {
                             </svg>
                         </button>
                     </section>
-                    <section className={`${active ? '' : 'hidden'} lg:flex lg:flex-row lg:my-0 my-4`}>
+                    <section className={`${active ? '' : 'hidden'} lg:flex lg:flex-row lg:items-center xl:px-0 md:px-12 px-6 py-4`}>
                             <NavBar navItems={navItems}/>
                             <Link href='/contact'>
-                                <button className="text-white text-sm uppercase hover:text-sand py-1 px-8 border hover:border-sand lg:mt-0 lg:ml-6 ml-3 ">
+                                <button className="text-white text-sm uppercase hover:text-sand  lg:mt-0 mt-4 py-2 px-6 border hover:border-sand lg:ml-6 ml-3 ">
                                     Contact
                                 </button>
                             </Link>

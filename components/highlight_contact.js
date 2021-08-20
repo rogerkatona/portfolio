@@ -13,7 +13,7 @@ export default function HighlightContact() {
                         <div className="lg:text-3xl text-2xl text-center">
                                 Reach out.  I want to hear from you.
                         </div>
-                        <div className="flex justify-center pt-6">
+                        <div className="flex justify-center lg:pt-6">
                             <Link href=''>
                                 <button
                                     onClick={toggle}

@@ -43,17 +43,18 @@ export default function Articles({allPostsData}) {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <div className="max-w-7xl mx-auto min-h-screen">
-                    <header className='xl:px-0 md:px-12 px-6 xl:py-24 py-12'>
+            <div className=" min-h-screen">
+                    <header className='max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12'>
                         <div id="headlineText" className='text-6xl text-gray-700 font-light'>
                             Articles
                         </div>
-                        <div id="subHeadlineText" className='text-base text-gray-500 mt-2'>
+                        <div id="subHeadlineText" className='text-base text-gray-500'>
                             A collection of articles to teach, inspire, and elevate our work as entrepreneurs, web designers, and front-end developers.
                         </div>
                     </header>
 
-                        <section className='bg-primaryLight bg-opacity-5 w-full xl:px-0 md:px-12 px-6 xl:py-24 py-12'>
+                        <section className='bg-primaryLight bg-opacity-5 w-full '>
+                            <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12">
                             {featuredPosts
                                 .map(featured =>
                                     <div key={featured.id} className='flex flex-col'>
@@ -83,8 +84,10 @@ export default function Articles({allPostsData}) {
                                         </div>
                                     </div>
                                 )}
+                            </div>
                         </section>
-                            <section className="md:grid md:grid-cols-3 md:gap-4 xl:px-0 md:px-12 px-6 xl:py-24 py-12">
+                            <section className="max-w-7xl mx-auto ">
+                                <div className="md:grid md:grid-cols-3 md:gap-4 xl:px-0 md:px-12 px-6 xl:py-24 py-12">
                                 {allPostsData
                                     .filter(featured => featured.type === 'articles' && featured.isFeatured !== 'true')
                                     .map(({ id, date, title, bannerSMImageSource, alt}) => (
@@ -108,6 +111,7 @@ export default function Articles({allPostsData}) {
 
                                         </div>
                                     ))}
+                                </div>
                             </section>
             </div>
         </Layout>
