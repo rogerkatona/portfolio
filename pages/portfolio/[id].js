@@ -1,12 +1,7 @@
 import Layout from '../../components/layout'
 import {getAllPostIds, getPostData} from '../../lib/posts'
 import Head from "next/head";
-import Date from "../../components/date";
-import Topics from "../../components/articleTopics";
-import topicItems from "../../data/topicItems";
-import SocialMediaItem from "../../components/socialMediaItem";
-import socialMediaItems from "../../data/socialMediaItems";
-import Link from "next/link";
+
 
 export async function getStaticProps({ params }) {
     // Add the "await" keyword like this:
@@ -51,30 +46,6 @@ export default function Post({ postData }) {
                     </header>
                     <section className="w-full bg-opacity-5 bg-primaryLight">
                         <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12">
-                            <div className='font-roboto text-2xl '>{postData.title}</div>
-                            <div className="py-2"> {postData.description} </div>
-                            <div className=""> <span className="font-bold pr-2 ">Topics:</span>{postData.topic} </div>
-
-                            <hr/>
-
-                            <section className='flex flex-row items-center'>
-                                <div className='md:pr-4'>
-                                    <img
-                                        className="md:block hidden"
-                                        src={postData.authorImageSource}
-                                        height={80}
-                                        width={80}
-                                        alt="author image - Roger Katona"
-                                    />
-                                </div>
-                                <div className='min-w-max'>
-                                    <div className='font-medium'>{postData.author}</div>
-                                    <div className='text-xs'>{postData.authorDescription}</div>
-                                </div>
-                                <div className='flex flex-row justify-end w-full'>
-                                    <SocialMediaItem socialMediaItems={socialMediaItems}/>
-                                </div>
-                            </section>
                             <section>
                                 <div className='my-8'>
                                     <img
@@ -89,7 +60,11 @@ export default function Post({ postData }) {
                                     />
                                 </div>
                             </section>
+                            <div className='font-roboto text-2xl '>{postData.title}</div>
+                            <div className="py-2"> {postData.description} </div>
+                            <div className=""> <span className="font-bold pr-2 ">Skills:</span>{postData.topic} </div>
 
+                            <hr/>
                             <section className='mb-12'>
                                 <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
                             </section>
