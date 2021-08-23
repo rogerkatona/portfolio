@@ -45,7 +45,7 @@ export default function Post({ postData }) {
                         </div>
                     </header>
                     <section className="w-full bg-opacity-5 bg-primaryLight">
-                        <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12">
+                        <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 py-12">
                             <section>
                                 <div className='my-8'>
                                     <img

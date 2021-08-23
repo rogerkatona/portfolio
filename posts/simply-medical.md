@@ -1,5 +1,5 @@
 ---
-title: 'Simply Medical'
+title: 'Design Project: Simply Medical'
 type: "portfolio"
 date: '2021-06-17'
 description: 'Design an eCommerce application for a subsidiary brand of McKesson Inc.  Building the User Interface from the ground up by creating an Information Architecture (IA) document that defined the site structure, and workflow processes like checkout and login... '
@@ -21,9 +21,9 @@ ogImage: 'https://www.rogerkatona.com/image/bannerSM-crossTraining.jpg'
 - Define the Information Architecture (IA)
 - Design Logo
 - Design wireframes of the pages and workflows based on IA
--- Review the wireframes and workflows with the business unit, and the development team
--- Design an interactive prototype from wireframes and workflows
--- Design pages with content provided by the business and data sourced from our DB
+    - Review the wireframes and workflows with the business unit, and the development team
+    - Design an interactive prototype from wireframes and workflows
+    - Design pages with content provided by the business and data sourced from our DB
 - Deliver to the development team fully designed pages in an interactive prototype
 
 ---
