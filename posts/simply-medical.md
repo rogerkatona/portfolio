@@ -20,10 +20,10 @@ ogImage: 'https://www.rogerkatona.com/image/bannerSM-crossTraining.jpg'
 ## My approach to this project
 - Define the Information Architecture (IA)
 - Design Logo
-- Wireframe the pages and workflows based on IA
-- Review the wireframes and workflows with the business unit, and the development team
-- Design an interactive prototype from wireframes and workflows
-- Design pages with content provided by the business and data sourced from our DB
+- Design wireframes of the pages and workflows based on IA
+-- Review the wireframes and workflows with the business unit, and the development team
+-- Design an interactive prototype from wireframes and workflows
+-- Design pages with content provided by the business and data sourced from our DB
 - Deliver to the development team fully designed pages in an interactive prototype
 
 ---
@@ -41,8 +41,10 @@ process our team could ensure we flattened the architecture as much as possible 
 
 ---
 
-## Wireframe the pages and workflows based on IA
+## Design wireframes of the pages and workflows based on IA
+At this phase I designed wireframes, workflow designs, and an interactive prototype.  This provided the assets I needed to review with the business and my development team.
 ![Simply Medical logo design](/image/postGraphic-simplyMedicalC.png)
+
 
 ---
 

@@ -36,7 +36,7 @@ export default function Post({ postData }) {
 
             <div className="">
                 <section className=''>
-                    <header className='max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12'>
+                    <header className='max-w-7xl mx-auto xl:px-0 md:px-12 px-6 py-12'>
                         <div id="headlineText" className='text-6xl text-gray-700 font-light'>
                             Portfolio
                         </div>
