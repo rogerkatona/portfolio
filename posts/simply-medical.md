@@ -17,7 +17,7 @@ ogImage: 'https://www.rogerkatona.com/image/bannerSM-crossTraining.jpg'
 
 ---
 
-## My approach for this project
+## My approach to this project
 - Define the Information Architecture (IA)
 - Design Logo
 - Wireframe the pages and workflows based on IA
@@ -28,7 +28,7 @@ ogImage: 'https://www.rogerkatona.com/image/bannerSM-crossTraining.jpg'
 
 ---
 
-## Defined the Information Architecture
+## Define the Information Architecture
 
 This shows the IA deliverable to the business and development teams. This is a critical part where the overall navigation and wayfinding structure of the eCommerce application is defined.  As a result of this
 process our team could ensure we flattened the architecture as much as possible as well as clearly defining how the user will navigate the UI. Also shows the very important process of defining the workflows and understanding exactly how the user will interact with the software.
@@ -36,7 +36,7 @@ process our team could ensure we flattened the architecture as much as possible 
 
 ---
 
-## Designed the Logo
+## Logo Design
 ![Simply Medical logo design](/image/postGraphic-simplyMedicalA.png)
 
 ---

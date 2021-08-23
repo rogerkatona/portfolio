@@ -3,7 +3,7 @@
 const socialMediaItems = [
     {
         label: "Linkedin",
-        src: '/image/icon-linkedin.svg',
+        src: '/image/icon-linkedIn.svg',
         path: "https://www.linkedin.com/in/rogerkatona",
         alt: 'LinkedIn',
     },
