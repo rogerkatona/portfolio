@@ -1,77 +1,51 @@
 ---
-title: 'Home ASAP'
+title: 'Design Project: Home ASAP'
 type: 'portfolio'
 date: '2021-06-24'
-description: 'Learn the process of building a simple but very functional form with useState, useEffect, and form validation.'
+description: 'Design a B2C web application for a real estates property listings.  Building the User Interface from the ground up by creating an Information Architecture (IA) document that defined the site structure.'
 isFeatured: 'false'
 bannerImageSource: '/image/bgLG-home-asap.png'
 bannerSMImageSource: '/image/bgSM-home-asap.png'
-topic: 'React | NextJS'
-author: 'Roger Katona'
-authorDescription: 'UI/UX Designer'
-authorImageSource: '/image/author_rogerkatona.png'
+topic: 'React | NextJS | UI Design | UX Design'
 ogURL: 'https://www.rogerkatona.com/posts/reactForm'
-ogType: 'article'
+ogType: 'portfolio'
 ogImage: 'https://www.rogerkatona.com/image/bannerSM-reactHooks.jpg'
 
 ---
 
-## To get started
-I built my web application using Next.js framework.  Next.js is a JavaScript framework created by Zeit. It lets you build server-side rendering and static web applications using React. I use Node.js as the server, and tailwind.css for styling.
-
-![contact form preview](/image/postGraphic-reactHooksA.png)
-
-## The challenge
-I want basic form functionality.  The UI to change (show error text and highlight input field) if the user didn't enter content in fields that are required and remove the error text and input field 
-highlight once the user focuses on the input field.  
-- Form validation for "Name" and "Email" fields.
-    - If the user didn't enter information in either field, I want to return a UI that communicates this.
-
-## Solution outline
-- I set an object called formData
-    - This object will be an array that returns the input field name and input value for name, and email.
-- For validation, I want to…
-    - Check to see if the user has entered their name and email
-        - If they haven’t entered a value, then when the "onSubmit" function is called.
-            - Alert the user if they didn&apos;t enter
-                - Name
-                - Email
-                - Both Name and Email
-            - Don’t submit the Form
-        - Otherwise (they have)
-            - Submit form
-            - Show success notification
-    - When the user enters either input field (onFocus) I want to clear the alert for that input field.
-        - For example.  If the user clicks in the input field = name
-            - The alert will go away for that input field
-            - The alert will remain for the other input field
+## Project Brief
+Design a web application to provide real estate agents a personalized web application where they can drive their clients to see current
+home listings, their recent activity, an opportunity to learn more about the agent, and provide rich interesting data about the property listings.
 
 ---
 
-## Code (as of June 18, 2021)
-- I set up the object formData using useState react hook (When the page renders it resets the variable back to undefined.  
-  The only way to update the variable is using the method provided by useState.  In this example, the only way to update formData is with setFormData.)
+## My approach to this project
+- Define the Information Architecture (IA)
+- Design Logo
+- Design wireframes of the pages and workflows based on IA
+    - Review the wireframes and workflows with the business unit, and the development team
+    - Design an interactive prototype from wireframes and workflows
+    - Design pages with content provided by the business and data sourced from our DB
+- Deliver to the development team fully designed pages in an interactive prototype
 
-![Preview ](/image/postGraphic-reactHooksB.png)
+---
 
-- Next, when the user enters a value in the input field
-    - Appends to the object
-    - Sets the value entered by the user
+## Design Logo
 
-![Preview ](/image/postGraphic-reactHooksC.png)
+![Home ASAP Design](/image/postGraphic-homeASAPA.png)
 
-- Evaluate if the user entered a value in the input field
+---
 
-![Preview ](/image/postGraphic-reactHooksD.png)
+## Deliver to the development team fully designed pages in an interactive prototype
+This page provided a full description of the agent, including about, ratings and reviews, recent sales activity sections.
+![Home ASAP Design](/image/postGraphic-homeASAPB.png)
 
-- Event listener to capture if the user entered a value in the input field
+---
 
-![Preview ](/image/postGraphic-reactHooksE.png)
+This page demonstrates the agents recent activity in the marketplace.
+![Home ASAP Design](/image/postGraphic-homeASAPC.png)
 
-## What works
-- The alert shows onSubmit
-- The fields clear the input field (onFocus)
+---
 
-## What doesn’t work…
-- When name or email fields are populated, onSubmit the form doesn’t know it and returns the alert
-    - I think I need to evaluate for either an empty array object or if the user entered a name and cleared the value evaluate if the value is equal to blank
+This page demonstrates a secondary search method by viewing an agents properties via a google maps api intergration.  
+![Home ASAP Design](/image/postGraphic-homeASAPD.png)

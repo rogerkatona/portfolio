@@ -47,7 +47,7 @@ export default function Post({ postData }) {
                     <section className="w-full bg-opacity-5 bg-primaryLight">
                         <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 py-12">
                             <section>
-                                <div className='my-8'>
+                                <div className='mt-12 pb-4'>
                                     <img
                                         className="lg:block hidden"
                                         src={postData.bannerImageSource}
@@ -60,7 +60,7 @@ export default function Post({ postData }) {
                                     />
                                 </div>
                             </section>
-                            <div className='font-roboto text-2xl '>{postData.title}</div>
+                            <div className='font-roboto text-3xl font-medium text-gray-600'>{postData.title}</div>
                             <div className="py-2"> {postData.description} </div>
                             <div className=""> <span className="font-bold pr-2 ">Skills:</span>{postData.topic} </div>
 

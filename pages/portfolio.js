@@ -100,7 +100,7 @@ export default function Portfolio({allPostsData}) {
                                             />
                                         </div>
                                         <div className="pt-2 md:w-4/5">
-                                            <Link href={`/articles/${id}`}>
+                                            <Link href={`/portfolio/${id}`}>
                                                 <a>
                                                     <div className='font-roboto text font-medium text-link hover:underline truncate'>{title}</div>
                                                 </a>
