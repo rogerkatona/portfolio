@@ -50,7 +50,7 @@ export default function Post({ postData }) {
                         </div>
                     </header>
                     <section className="w-full bg-opacity-5 bg-primaryLight">
-                        <section className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12">
+                        <section className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6  py-12">
                             <div className='font-roboto text-2xl '>{postData.title}</div>
                             <div className="py-2"> {postData.description} </div>
                             <div className=""> <span className="font-bold pr-2 ">Topics:</span>{postData.topic} </div>
