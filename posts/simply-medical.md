@@ -1,5 +1,5 @@
 ---
-title: 'Design Project: Simply Medical'
+title: 'Simply Medical'
 type: "portfolio"
 date: '2021-06-17'
 description: 'Design an eCommerce application for a subsidiary brand of McKesson Inc.  Building the User Interface from the ground up by creating an Information Architecture (IA) document that defined the site structure, and workflow processes like checkout and login... '

@@ -1,5 +1,5 @@
 ---
-title: 'Design Project: Home ASAP'
+title: 'Home ASAP'
 type: 'portfolio'
 date: '2021-06-24'
 description: 'Design a B2C web application for a real estate agents property listings.  Building the User Interface from the ground up by creating an Information Architecture (IA) document and provide an interactive prototype.'
@@ -23,10 +23,9 @@ home listings, their recent activity, an opportunity to learn more about the age
 - Define the Information Architecture (IA)
 - Design Logo
 - Design wireframes of the pages and workflows based on IA
-    - Review the wireframes and workflows with the business unit, and the development team
-    - Design an interactive prototype from wireframes and workflows
-    - Design pages with content provided by the business and data sourced from our DB
-- Deliver to the development team fully designed pages in an interactive prototype
+- Design review with the stakeholders
+- Design an interactive prototype from wireframes
+- Deliver to the development team fully designed pages in an interactive prototype in Invision.
 
 ---
 

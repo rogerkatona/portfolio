@@ -78,9 +78,6 @@ export default function Portfolio({allPostsData}) {
                                                     <div className='font-roboto text-3xl font-medium text-link hover:underline'>{featured.title}</div>
                                                 </a>
                                             </Link>
-                                            <div className='font-banner text-xs '>
-                                                <Date dateString={featured.date} />
-                                            </div>
                                             <div className="pt-2">{featured.description} </div>
                                         </div>
                                     </div>
@@ -105,11 +102,7 @@ export default function Portfolio({allPostsData}) {
                                                     <div className='font-roboto text font-medium text-link hover:underline truncate'>{title}</div>
                                                 </a>
                                             </Link>
-                                            <div className='font-banner text-xs '>
-                                                <Date dateString={date} />
-                                            </div>
                                         </div>
-
                                     </div>
                                 ))}
                         </div>

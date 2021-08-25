@@ -26,7 +26,7 @@ export default function Post({ postData }) {
     return (
         <Layout>
             <Head>
-                <title>{postData.title}</title>
+                <title>Portfolio: {postData.title}</title>
                 <meta property="og:url" content={postData.ogURL} key="openGraphURL" />
                 <meta property="og:type" content={postData.ogtype} />
                 <meta property="og:title" content={postData.title} key="title"/>
@@ -47,7 +47,7 @@ export default function Post({ postData }) {
                     <section className="w-full bg-opacity-5 bg-primaryLight">
                         <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 py-12">
                             <section>
-                                <div className='mt-12 pb-4'>
+                                <div className='mt-6 pb-4'>
                                     <img
                                         className="lg:block hidden"
                                         src={postData.bannerImageSource}
