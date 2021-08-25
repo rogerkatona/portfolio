@@ -2,7 +2,7 @@
 title: 'Florida Blue (In review)'
 type: "portfolio"
 typeOfArticle: "Article"
-date: '2021-07-06'
+date: '2020-07-06'
 description: 'A design project where we focused exclusively on user feedback to drive the direction of our design.'
 isFeatured: 'false'
 imageSourceFeatured: '/image/bgLG-florida-blue.png'

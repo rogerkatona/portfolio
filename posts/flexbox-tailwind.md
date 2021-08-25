@@ -4,7 +4,7 @@ type: "articles"
 typeOfArticle: "Article"
 date: '2021-07-06'
 description: 'Learn to use 4 key Flexbox properties.  You will find these properties incredibly useful, and eliminate dependency on legacy CSS hacks like float or inline-block.'
-isFeatured: 'true'
+isFeatured: 'false'
 imageSourceFeatured: '/image/bannerSM-flexbox.png'
 bannerImageSource: '/image/banner-flexbox.png'
 bannerSMImageSource: '/image/bannerSM-flexbox.png'

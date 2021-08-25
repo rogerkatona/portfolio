@@ -1,27 +1,27 @@
 ---
-title: 'How to Avert Disaster (Hollywood Style) by Applying These 3 Basic User Experience (UX) Principles'
+title: 'How to Avert Disaster by Applying These 3 Basic User Experience (UX) Principles'
 type: 'articles'
-date: '2020-09-01'
-description: "I can't speak for you but being a User Experience Designer, I see so many things in life through the lens of my chosen profession. "
-isFeatured: 'false'
-bannerImageSource: '/image/banner-purposeDrivenDesign.jpg'
-bannerSMImageSource: '/image/bannerSM-purposeDrivenDesign.jpg'
-imageSourceFeatured: '/image/blog-purposeDrivenDesign-feature.png'
+date: '2021-09-01'
+description: "I can't speak for you, but as a designer, I see most things through the lens of my chosen profession. "
+isFeatured: 'true'
+bannerImageSource: '/image/bannerLG-hollywood.png'
+bannerSMImageSource: '/image/bannerSM-hollywood.png'
+imageSourceFeatured: '/image/bannerLG-hollywood.png'
 topic: 'UI/UX Design | User Experience'
 alt: 'graphic for purpose driven design blog post'
 author: 'Roger Katona'
 authorDescription: 'UI/UX Designer'
 authorImageSource: '/image/author_rogerkatona.png'
-ogURL: 'https://www.rogerkatona.com/posts/top-3-unacceptable-design-mistakes'
+ogURL: 'https://www.rogerkatona.com/posts/hollywood-disaster-user-experience-principles'
 ogType: 'article'
-ogImage: 'https://www.rogerkatona.com/image/bannerSM-purposeDrivenDesign.jpg'
+ogImage: 'https://www.rogerkatona.com/image/bannerSM-hollywood.png'
 ---
 <br>
 
 ---
 <br>
 
-I can't speak for you but as a User Experience Designer, I see most things in life through the lens of my chosen profession. Whether it's noticing the signage at our local Sprouts Grocery Store, reading a delicious snacks (Pop-Corners) packaging, or observing real-life-ish Hollywood situations. I often consider how this information would be received from a general user's perspective.  For example: I may ask myself questions like, does this delicious snack (Pop-Corners) tell the same story from its online description to it's packaging and branding, to its final product?
+I can't speak for you, but as a designer, I see most things through the lens of my chosen profession. Whether it's noticing the signage at our local Sprouts Grocery Store, reading a delicious snacks (Pop-Corners) packaging, or observing real-life-ish Hollywood situations. I often consider how this information would be received from a general user's perspective.  For example: I may ask myself questions like, does this delicious snack (Pop-Corners) tell the same story from its online description to it's packaging and branding, to its final product?
 
 I want to answer that question now, but the crunching sound, and amazing spicy queso flavor are too much, at this moment for clear thought.
 

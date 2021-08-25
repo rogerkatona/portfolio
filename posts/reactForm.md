@@ -1,7 +1,7 @@
 ---
 title: 'React Hooks - useState, useEffect, and form validation.'
 type: 'articles'
-date: '2021-06-24'
+date: '2021-04-24'
 description: 'Learn the process of building a simple but very functional form with useState, useEffect, and form validation.'
 isFeatured: 'false'
 imageSourceFeatured: '/image/banner-crossTraining.jpg'
