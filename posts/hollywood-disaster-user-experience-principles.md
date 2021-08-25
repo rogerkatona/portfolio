@@ -1,5 +1,5 @@
 ---
-title: 'How to Avert Disaster by Applying These 3 Basic User Experience (UX) Principles'
+title: 'How to avoid Hollywood pitfalls by Applying These 3 Basic User Experience (UX) Principles'
 type: 'articles'
 date: '2021-09-01'
 description: "I can't speak for you, but as a designer, I see most things through the lens of my chosen profession. "

@@ -3,11 +3,11 @@ title: 'MobyMax'
 type: "portfolio"
 typeOfArticle: "Article"
 date: '2021-07-06'
-description: 'Senior UI/UX Designer for an educational technology (Edtech) company '
+description: 'Senior UI/UX Designer for an educational technology (Edtech) company'
 isFeatured: 'false'
-imageSourceFeatured: '/image/bgLG-mobymax.png'
-bannerImageSource: '/image/bgLG-mobymax.png'
-bannerSMImageSource: '/image/bgSM-mobymax.png'
+imageSourceFeatured: '/image/bgLG-mobyMax.png'
+bannerImageSource: '/image/bgLG-mobyMax.png'
+bannerSMImageSource: '/image/bgSM-mobyMax.png'
 topic: 'Rapid Design Cycle | A/B Testing | Quantitative and Qualitative Testing | Functional Prototypes | Agile Methodology'
 alt: 'Portfolio-MobyMax'
 ogURL: 'https://www.rogerkatona.com/posts/mobymax'
@@ -17,8 +17,8 @@ ogImage: 'https://www.rogerkatona.com/image/bgSM-mobymax.png.png'
 
 ---
 
-## Brief
-It was an amazing opportunity to work with a cutting edge Edtech software company.  As districts and schools around the country adopted our software we felt a real responsibility of providing a solution that truly helped kids catch up if they were falling behind in the classroom.
+## Project Brief
+It was an amazing opportunity to work with a cutting edge Edtech software company.  As districts and schools around the country adopted our software we felt a real responsibility of providing a solution that truly helps kids catch up if they were falling behind in the classroom.
 
 ## Responsibilities
 - Design the administration user interface (UI) for districts, schools, and teachers.  This application enabled administrators to evaluate a student's mastery of skills using adaptive assessments, and based on the results assign lessons based on state standards.
