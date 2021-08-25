@@ -38,4 +38,9 @@ It was an amazing opportunity to work with a cutting edge Edtech software compan
 - Finalize designs, functional specs, and functional prototype (if needed) for a final review with leadership.
 - Lead a hand-off meeting with the development, design, and QA teams.
 - Ongoing support until we deployed the new feature to production.
-    
+
+
+---
+
+Information Architecture for a complete redesign of the adminstration user interface
+![MobyMax Information Architecture](/image/postGraphic-mobymaxA.png)
