@@ -85,7 +85,7 @@ export default function Portfolio({allPostsData}) {
                         </div>
                     </section>
                     <section className="max-w-7xl mx-auto ">
-                        <div className="md:grid md:grid-cols-3 md:gap-4 xl:px-0 md:px-12 px-6 xl:py-24 py-12">
+                        <div className="md:grid md:grid-cols-4 md:gap-4 xl:px-0 md:px-12 px-6 xl:py-24 py-12">
                             {allPostsData
                                 .filter(featured => featured.type === 'portfolio' && featured.isFeatured !== 'true')
                                 .map(({ id, date, title, bannerSMImageSource, alt}) => (
