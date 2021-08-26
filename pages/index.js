@@ -41,22 +41,22 @@ export default function Home({allPostsData}) {
           <div className="bg-primaryLight bg-opacity-5 w-full">
             <HighlightQuoteHurff/>
           </div>
-          <section className='bg-primary bg-opacity-5 w-full'>
-            <div className=" max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12">
+          <section className='bg-primary bg-opacity-5 w-full xl:px-0 md:px-12 px-6 xl:py-24 py-12'>
             {
               featuredPosts
                   .filter(featured => featured.type === 'articles')
                   .map(featured =>
-                      <div key={featured.id} className='flex lg:flex-row flex-col items-center '>
+
+                      <div key={featured.id} className='flex lg:flex-row flex-col max-w-7xl mx-auto'>
                         <div className='flex'>
                           <img
-                              src={featured.imageSourceFeatured}
-                              height={651}
-                              width={1000}
-                              alt={'Featured Insights'}
+                              src={featured.bannerSMImageSource}
+                              height={750}
+                              width={1770}
+                              alt={'Featured Article'}
                           />
                         </div>
-                        <div className='flex lg:pl-12 pt-6 '>
+                        <div className='flex lg:pl-12 lg:py-0 pt-6 pb-0'>
                           <div className='lg:mx-auto flex flex-col lg:justify-center'>
                             <div className='font-roboto text-3xl tracking-tighter '>
                               {featured.title}
@@ -72,25 +72,23 @@ export default function Home({allPostsData}) {
                         </div>
                       </div>
                   )}
-            </div>
           </section>
           <HighlightQuoteWhile/>
-          <section className='bg-primary bg-opacity-5 w-full'>
-            <div className=" max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12">
+          <section className='xl:px-0 md:px-12 px-6 xl:py-24 py-12'>
             {
               featuredPosts
                   .filter(featured => featured.type === 'portfolio')
                   .map(featured =>
-                      <div key={featured.id} className='flex lg:flex-row-reverse flex-col items-center'>
+                      <div key={featured.id} className='flex lg:flex-row lg:flex-row-reverse flex-col max-w-7xl mx-auto '>
                         <div className=''>
                           <img
-                              src={featured.imageSourceFeatured}
+                              src={featured.bannerSMImageSource}
                               height={650}
                               width={1000}
                               alt={'featured portfolio project'}
                           />
                         </div>
-                        <div className='flex pt-6 pr-12 lg:w-2/3'>
+                        <div className='flex lg:pr-12 lg:py-0 pt-6 pb-0 lg:w-2/3'>
                           <div className='lg:mx-auto flex flex-col lg:justify-center'>
                             <div className='font-roboto text-3xl tracking-tighter '>
                               {featured.title}
@@ -99,14 +97,13 @@ export default function Home({allPostsData}) {
                               <Date dateString={featured.date} />
                             </div>
                             <div className='text-black text-xl py-4'>{featured.description}</div>
-                            <Link href={`/portfolio/${featured.id}`}>
+                            <Link href={`/work/${featured.id}`}>
                               <a className='text-link hover:underline uppercase'>Read The Full Story &#8594;</a>
                             </Link>
                           </div>
                         </div>
                       </div>
                   )}
-            </div>
           </section>
           <HighlightContact/>
         </main>

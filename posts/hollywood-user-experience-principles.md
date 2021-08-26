@@ -2,7 +2,7 @@
 title: 'How To Avoid Needless Suffering by Applying 3 Important User Experience (UX) Principles'
 type: 'articles'
 date: '2021-08-25'
-description: "I can't speak for you, but as a designer, I see most things through the lens of my chosen profession. "
+description: "I can't speak for you, but as a designer, I see most things in life through the lens of my chosen profession. "
 isFeatured: 'true'
 bannerImageSource: '/image/bannerLG-hollywood.png'
 bannerSMImageSource: '/image/bannerSM-hollywood.png'
@@ -21,7 +21,7 @@ ogImage: 'https://www.rogerkatona.com/image/bannerSM-hollywood.png'
 ---
 <br>
 
-I can't speak for you, but as a designer, I see most things through the lens of my chosen profession. Whether it's noticing the signage at our local Sprouts Grocery Store, reading a delicious snacks (Pop-Corners) packaging, or observing real-life-ish Hollywood situations. I often consider how this information would be received from a general user's perspective.  For example: I may ask myself questions like, does this delicious snack (Pop-Corners) tell the same story from its online description to it's packaging and branding, to its final product?
+I can't speak for you, but as a designer, I see most things in life through the lens of my chosen profession. Whether it's noticing the signage at our local Sprouts Grocery Store, reading a delicious snacks (Pop-Corners) packaging, or observing real-life-ish Hollywood situations. I often consider how this information would be received from a general user's perspective.  For example: I may ask myself questions like, does this delicious snack (Pop-Corners) tell the same story from its online description to it's packaging and branding, to its final product?
 
 I want to answer that question now, but the crunching sound, and amazing spicy queso flavor are too much, at this moment for clear thought.
 
