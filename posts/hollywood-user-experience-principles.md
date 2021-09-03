@@ -12,7 +12,7 @@ alt: 'graphic for purpose driven design blog post'
 author: 'Roger Katona'
 authorDescription: 'UI/UX Designer'
 authorImageSource: '/image/author_rogerkatona.png'
-ogURL: 'https://www.rogerkatona.com/posts/hollywood-disaster-user-experience-principles'
+ogURL: 'https://www.rogerkatona.com/articles/hollywood-user-experience-principles'
 ogType: 'article'
 ogImage: 'https://www.rogerkatona.com/image/bannerSM-hollywood.png'
 ---
@@ -45,7 +45,7 @@ A serious situation had developed and Jack Ryan had only seconds to tell Becker 
 he tells him two very unnecessary things.  First, that he is at the Russia desk and secondly, that he knows Nemerov.  Pft!
 
 **User Experience Lesson #1**</br>
-Get to the point!  Listen dear reader, the irony isn't lost on me that I'm writing this long-winded article to extol the virtues of getting to the point quickly, but just like Jack had precious little time to communicate important information, you have little precious time ( [50 milliseconds](https://www.researchgate.net/publication/220208334_Attention_web_designers_You_have_50_milliseconds_to_make_a_good_first_impression_Behaviour_and_Information_Technology_252_115-126) ) to get your message across to your website audience.  Don't meander!  Express what you do and what you offer in the form of products or services immediately.   Next time Jack, start the conversation by telling the man where the plutonium came from!
+Get to the point!  Listen dear reader, the irony isn't lost on me that I'm writing this long-winded article to extol the virtues of getting to the point quickly, but just like Jack had precious little time to communicate important information, you have very little time ( [50 milliseconds](https://www.researchgate.net/publication/220208334_Attention_web_designers_You_have_50_milliseconds_to_make_a_good_first_impression_Behaviour_and_Information_Technology_252_115-126) ) to get your message across to your website audience.  Don't meander!  Express what you do and what you offer in the form of products or services immediately.   Next time Jack, start the conversation by telling the man where the plutonium came from!
 
 ## Forrest Gump
 

@@ -13,7 +13,7 @@ alt: 'Top 4 foundational Flexbox properties'
 author: 'Roger Katona'
 authorDescription: 'UI/UX Designer'
 authorImageSource: '/image/author_rogerkatona.png'
-ogURL: 'https://www.rogerkatona.com/posts/flexbox-tailwind'
+ogURL: 'https://www.rogerkatona.com/articles/flexbox-tailwind'
 ogType: 'article'
 ogImage: 'https://www.rogerkatona.com/image/bannerSM-flexbox.png'
 
