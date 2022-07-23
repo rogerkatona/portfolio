@@ -54,7 +54,7 @@ export const Form = ({ initialRef}) => {
                     .then((res) => {
                     if (res.status === 200) {
                         setToastMessage({message:(
-                                <div className={`${router.pathname.startsWith("/campaign/")  ? 'hidden' : 'block'} absolute bottom-0 text-green-800 -mb-10`}>
+                                <div className={`${router.pathname.startsWith("/campaign/")  ? 'hidden' : 'block'} absolute bottom-0 text-white.100 -mb-10`}>
                                     Thank you for reaching out to me.  I&apos;ll respond to you shortly!  Have a great day.
                                 </div>
                             )});
@@ -63,14 +63,14 @@ export const Form = ({ initialRef}) => {
                 })
             } catch (e) {
                 setToastMessage({message:(
-                        <div className="text-danger font-bold absolute bottom-0 -mb-10">
+                        <div className="text-lightRed.900 font-bold absolute bottom-0 -mb-10">
                             Deepest apologies.  There was an error with your request.  Please try again later.
                         </div>
                     )})
             }
         } else {
             setToastMessage({message:(
-                    <div className="text-danger font-bold absolute -bottom-1 -mb-10 ">
+                    <div className="text-lightRed.900 font-bold absolute -bottom-1 -mb-10 ">
                         Please verify all fields are filled out.
                     </div>
                 )})
