@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 347.56 327.93" style="enable-background:new 0 0 347.56 327.93;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#578597;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+	.st2{opacity:0.15;}
+	.st3{fill:#FFFFFF;}
+	.st4{font-family:'Futura-Bold';}
+	.st5{font-size:125px;}
+	.st6{fill:none;stroke:#D9D4C5;stroke-width:0.5;stroke-miterlimit:10;}
+</style>
+<circle class="st0" cx="177.59" cy="165.43" r="162.5"/>
+<circle class="st1" cx="187.91" cy="166.97" r="159.4"/>
+<g>
+	<path class="st0" d="M335.78,202.76l-88.44-88.44l-38.4,6.78l-11.29,29.36l-5.84,12.24l-42.73-42.73l-30.49,5.65l-16.94,74.54
+		l121.34,121.34C278.89,305.26,322.36,259.81,335.78,202.76z"/>
+	<path class="st2" d="M335.78,202.76l-88.44-88.44l-38.4,6.78l-11.29,29.36l-5.84,12.24l-42.73-42.73l-30.49,5.65l-16.94,74.54
+		l121.34,121.34C278.89,305.26,322.36,259.81,335.78,202.76z"/>
+</g>
+<text transform="matrix(1 0 0 1 92.5938 208.0354)" class="st3 st4 st5">05</text>
+<circle class="st6" cx="159.65" cy="159.65" r="159.4"/>
+</svg>

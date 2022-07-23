@@ -1,0 +1,21 @@
+{
+    "appName": "blueprospectdesign",
+    "roleName": "pinpointLambdaRole8aac3edc",
+    "cloudformationPolicyName": "cloudformationPolicy8aac3edc",
+    "cloudWatchPolicyName": "cloudWatchPolicy8aac3edc",
+    "pinpointPolicyName": "pinpointPolicy8aac3edc",
+    "authPolicyName": "pinpoint_amplify_8aac3edc",
+    "unauthPolicyName": "pinpoint_amplify_8aac3edc",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

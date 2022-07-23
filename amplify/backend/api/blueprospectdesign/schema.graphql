@@ -1,0 +1,9 @@
+type EditHeadlineInsight @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  headlineText: String
+}
+
+type EditSubHeadlineInsight @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  subHeadlineText: String
+}

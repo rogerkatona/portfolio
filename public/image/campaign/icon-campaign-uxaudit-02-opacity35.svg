@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 347.56 327.93" style="enable-background:new 0 0 347.56 327.93; opacity:0.35;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#969357;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+	.st2{opacity:0.15;}
+	.st3{fill:#FFFFFF;}
+	.st4{font-family:'Futura-Bold';}
+	.st5{font-size:125px;}
+	.st6{fill:none;stroke:#EAE4D8;stroke-width:0.5;stroke-miterlimit:10;}
+</style>
+    <circle class="st0" cx="177.59" cy="165.43" r="162.5"/>
+    <circle class="st1" cx="187.91" cy="166.97" r="159.4"/>
+    <g class="st2">
+	<path d="M332.75,213.86l-87.68-87.68l-22.59-2.26l-28.24,11.29l14.68,27.67l-6.78,6.78l-42.35-42.35l-24.28-2.26l-19.76,18.07
+		l8.47,25.98l-16.94,36.14l116.13,116.13C275.44,306.1,316.64,265.52,332.75,213.86z"/>
+</g>
+    <text transform="matrix(1 0 0 1 92.5936 213.7391)" class="st3 st4 st5">88</text>
+    <circle class="st6" cx="159.65" cy="159.65" r="159.4"/>
+</svg>
