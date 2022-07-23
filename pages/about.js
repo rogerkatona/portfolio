@@ -1,33 +1,60 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
-import HighlightContact from "../components/highlight_contact";
-import AboutHero from "../components/about-hero";
-import HighlightQuoteBourget from "../components/highlight_quote_bourget";
-import HighlightAboutExperience from "../components/highlight_about_experience";
-import AboutPieChart from "../components/about-pieChart";
-import HighlightQuoteHurff from "../components/highlight_quote_hurff";
+import Hero from "../components/hero";
+import aboutItems from "../data/aboutItems";
+import Promo from "../components/promo";
 
 
 export default function About() {
+
+    let filteredItem = aboutItems.filter(function (item){
+        return item.isActive === 'true'
+    });
+
+
     return (
         <Layout home>
+
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-                <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 py-12">
-                    <header className=''>
-                            <div id="headlineText" className='text-6xl text-gray-700 font-light'>
-                                About
+
+            <div className="bg-hero-about min-h-screen20vh max-h-screen20vh bg-cover bg-right bg-no-repeat">
+                <Hero id={5}/>
+            </div>
+
+            <section className="max-w-7xl mx-auto pt-12">
+                {filteredItem
+                    .map(filteredItem => (
+
+                        <div
+                            key={filteredItem.id}
+                            className={`flex flex-col pb-12 ${filteredItem.activeID % 2 === 0  ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}>
+
+                            <div className=''>
+                                <img
+                                    src={filteredItem.src}
+                                    width={1000}
+                                    alt={'Roger Katona - About'}
+                                />
                             </div>
-                            <div id="subHeadlineText" className='text-base text-gray-500 pt-2'>
-                                20 years of experience designing user interfaces for websites and web applications.
+
+                            <div className="lg:w-4/5 w-full">
+                                <div className='lg:text-3xl text-2xl text-gray.500 tracking-wide  bg-gray.100 lg:p-12 p-4'>{filteredItem.callOut}</div>
+                                <p className="lg:p-12 p-4 pt-6">{filteredItem.text}</p>
                             </div>
-                        </header>
-                </div>
-                <AboutHero />
-                <HighlightQuoteHurff/>
-                <HighlightAboutExperience/>
-                <HighlightContact/>
+                        </div>
+
+                ))}
+             </section>
+
+            <div className="bg-gray.050 -mt-12 ">
+                <Promo id={1}/>
+            </div>
+
         </Layout>
     )
 }
+
+
+

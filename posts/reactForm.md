@@ -1,12 +1,12 @@
 ---
 title: 'React Hooks - useState, useEffect, and form validation.'
-type: 'articles'
-date: '2021-04-24'
+type: "blog"
+date: '2021-06-24'
 description: 'Learn the process of building a simple but very functional form with useState, useEffect, and form validation.'
 isFeatured: 'false'
-imageSourceFeatured: '/image/banner-crossTraining.jpg'
-bannerImageSource: '/image/banner-reactHooks.jpg'
-bannerSMImageSource: '/image/bannerSM-reactHooks.jpg'
+imageSourceFeatured: '/image/blog/react-hooks/banner-lg.jpg'
+bannerImageSource: '/image/blog/react-hooks/banner-lg.jpg'
+bannerSMImageSource: '/image/blog/react-hooks/banner-sm.jpg'
 topic: 'React | NextJS'
 author: 'Roger Katona'
 authorDescription: 'UI/UX Designer'

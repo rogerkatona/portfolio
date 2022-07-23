@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import  { Form } from "./form";
+import ReactPlayer from "react-player";
 
 
 
-const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
+const ModalVideo = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
 
     <>
         <div className="relative" aria-modal aria-hidden tabIndex={-1} role="dialog">
-            <div className="w-full h-full z-20 bg-bg-contactModal bg-cover fixed top-0 left-0 flex flex-row">
+            <div className="w-full h-full z-20 bg-blue.800 fixed top-0 left-0 flex flex-row">
 
                 <section className="fixed right-0">
                     <div className="modal-close cursor-pointer z-20 p-4">
@@ -24,17 +24,15 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
                     </div>
                 </section>
 
-                <section className="max-w-7xl mx-auto flex flex-col justify-center xl:w-1/2 w-full md:px-12 px-2 pt-24 ">
-                    <div className="lg:p-12 p-6">
-                        <div className="font-bebasNeue text-6xl text-white.100  flex flex-row justify-center pb-12">
-                            Contact Roger Katona
-                        </div>
-                        <div className="text-gray.200 flex flex-row justify-center pb-12 text-center">
-                            <div className="" >
-                                Provide your information and I will reach out to quickly to schedule an exploratory call (30 minutes) to discuss how I can help. I&apos;ll provide web conferencing details provided upon confirmation.
-                            </div>
-                        </div>
-                        <Form/>
+                <section className="max-w-7xl mx-auto flex flex-col justify-center xl:w-3/5 w-full px-12 ">
+                    <div className="flex flex-row justify-center h-screen items-center lg:mx-0 mx-4">
+                        <ReactPlayer
+
+                            controls={true}
+                            playing={true}
+                            url="https://youtu.be/uHmUL09JPb4"
+                        />
+                        <div>&nbsp;</div>
                     </div>
                 </section>
 
@@ -43,4 +41,4 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
     </>, document.body
 ) : null;
 
-export default Modal;
+export default ModalVideo;

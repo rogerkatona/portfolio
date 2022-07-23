@@ -1,13 +1,10 @@
 // components/ExperienceItem.js
 
-import Link from "next/link";
-
 const Experience = props => (
-    <div className="">
-        <div className="text-black text-2xl">{props.role}</div>
-        <div className='text-xs font-bold uppercase text-gray-600'>{props.company} </div>
+    <div className="pb-4">
+        <div className='text-black text-2xl'>{props.company} / <span className="">{props.role}</span></div>
         <div className='text-gray-700 text-xs'>{props.dateRange}</div>
-        <div className='text-gray-700 pt-2'>{props.overview}</div>
+        <div className='text-gray-700 '>{props.overview}</div>
     </div>
 );
 

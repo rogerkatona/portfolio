@@ -1,18 +1,18 @@
 ---
 title: 'MobyMax'
-type: "portfolio"
+type: "work"
 typeOfArticle: "Article"
-date: '2021-07-06'
-description: 'Senior UI/UX Designer for an educational technology (Edtech) company'
+date: '2021-08-21'
+description: 'Senior UI/UX Designer for an educational technology (Ed-tech) company'
 isFeatured: 'false'
-imageSourceFeatured: '/image/bgLG-mobyMax.png'
-bannerImageSource: '/image/bgLG-mobyMax.png'
-bannerSMImageSource: '/image/bgSM-mobyMax.png'
+imageSourceFeatured: '/image/client/mobymax/banner-lg.png'
+bannerImageSource: '/image/client/mobymax/banner-lg.png'
+bannerSMImageSource: '/image/client/mobymax/banner-sm.png'
 topic: 'Rapid Design Cycle | A/B Testing | Quantitative and Qualitative Testing | Functional Prototypes | Agile Methodology'
 alt: 'Portfolio-MobyMax'
 ogURL: 'https://www.rogerkatona.com/posts/mobymax'
 ogType: 'article'
-ogImage: 'https://www.rogerkatona.com/image/bgSM-mobymax.png.png'
+ogImage: 'https://www.blueprospect.com/image/client/mobymax/banner-sm.png'
 
 
 ---

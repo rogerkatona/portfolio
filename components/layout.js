@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Header from "./header";
 import Footer from "./footer";
 
-export const siteTitle = 'Roger Katona - Portfolio'
+export const siteTitle = 'Roger Katona - UX leadership'
 
 export default function Layout({ children}) {
 

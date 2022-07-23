@@ -1,16 +1,13 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import ClientLogos from '../components/clientLogos'
-import Hero from '../components/hero'
-import HighlightQuoteWhile from "../components/highlight_quote_while";
-import { getSortedPostsData } from '../lib/posts'
+import Head from "next/head";
+import Layout, { siteTitle } from "../components/layout";
+import ClientLogos from "../components/client-logos";
+import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
-import HighlightQuoteHurff from "../components/highlight_quote_hurff";
-import HighlightContact from "../components/highlight_contact";
-import AboutHero from "../components/about-hero";
-
-
+import HeroIndex from "../components/hero_index"
+import Features from "../components/features";
+import Quote from "../components/quote";
+import Promo from "../components/promo";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -21,93 +18,70 @@ export async function getStaticProps() {
   }
 }
 
-
 export default function Home({allPostsData}) {
-
 
   let featuredPosts = allPostsData.filter(function (featured){
     return featured.isFeatured === 'true'
   })
 
   return (
-      <Layout home>
-        <Head>
-          <title>{siteTitle}</title>
-        </Head>
-        <main>
-          <Hero/>
-          <ClientLogos/>
-          <AboutHero />
-          <div className="bg-primaryLight bg-opacity-5 w-full">
-            <HighlightQuoteHurff/>
-          </div>
-          <section className='bg-primary bg-opacity-5 w-full xl:px-0 md:px-12 px-6 xl:py-24 py-12'>
-            {
-              featuredPosts
-                  .filter(featured => featured.type === 'articles')
-                  .map(featured =>
-
-                      <div key={featured.id} className='flex lg:flex-row flex-col max-w-7xl mx-auto'>
-                        <div className='flex'>
-                          <img
-                              src={featured.bannerSMImageSource}
-                              height={750}
-                              width={1770}
-                              alt={'Featured Article'}
-                          />
-                        </div>
-                        <div className='flex lg:pl-12 lg:py-0 pt-6 pb-0'>
-                          <div className='lg:mx-auto flex flex-col lg:justify-center'>
-                            <div className='font-roboto text-3xl tracking-tighter '>
-                              {featured.title}
-                            </div>
-                            <div className='text-secondary text-xs'>
-                              <Date dateString={featured.date} />
-                            </div>
-                            <div className='text-black text-xl py-4'>{featured.description}</div>
-                            <Link href={`/articles/${featured.id}`}>
-                              <a className='text-link hover:underline uppercase'>Read Featured Article &#8594;</a>
-                            </Link>
-                          </div>
-                        </div>
+    <Layout className="flex flex-col items-center justify-center py-2">
+      <Head>
+        <title>{siteTitle}</title>
+      </Head>
+        <HeroIndex/>
+        <ClientLogos/>
+        <Features  featured="true" type="service" subtype="ux-design"/>
+        <Quote id={2}/>
+        <Features  featured="true" type="workshop"/>
+        <Promo id={0}/>
+        <Features  featured="true" type="client" />
+        <Promo id={2}/>
+      {
+        featuredPosts
+            .filter(featured => featured.type === 'blog')
+            .map(featured =>
+                <section key={featured.id} className='bg-white.100 p-12 '>
+                  <div  className='flex lg:flex-row lg:flex-row flex-col max-w-7xl mx-auto'>
+                    <div className='flex'>
+                      <img
+                          src={featured.bannerSMImageSource}
+                          alt={'Featured Blog'}
+                          width={1000}
+                      />
+                    </div>
+                    <div className='md:w-4/5 w-full lg:pl-6 pt-6 lg:pt-0'>
+                      <div className='text-medRed.700'>
+                        <Link href={`/posts/${featured.id}`}>
+                          <a className='hover:underline uppercase text-xs'>/ Blog</a>
+                        </Link>
                       </div>
-                  )}
-          </section>
-          <HighlightQuoteWhile/>
-          <section className='xl:px-0 md:px-12 px-6 xl:py-24 py-12'>
-            {
-              featuredPosts
-                  .filter(featured => featured.type === 'portfolio')
-                  .map(featured =>
-                      <div key={featured.id} className='flex lg:flex-row lg:flex-row-reverse flex-col max-w-7xl mx-auto '>
-                        <div className=''>
-                          <img
-                              src={featured.bannerSMImageSource}
-                              height={650}
-                              width={1000}
-                              alt={'featured portfolio project'}
-                          />
-                        </div>
-                        <div className='flex lg:pr-12 lg:py-0 pt-6 pb-0 lg:w-2/3'>
-                          <div className='lg:mx-auto flex flex-col lg:justify-center'>
-                            <div className='font-roboto text-3xl tracking-tighter '>
-                              {featured.title}
-                            </div>
-                            <div className='text-secondary text-xs'>
-                              <Date dateString={featured.date} />
-                            </div>
-                            <div className='text-black text-xl py-4'>{featured.description}</div>
-                            <Link href={`/work/${featured.id}`}>
-                              <a className='text-link hover:underline uppercase'>Read The Full Story &#8594;</a>
-                            </Link>
-                          </div>
-                        </div>
+                      <div className='font-bebasNeue text-4xl text-darkBlue.700 pb-4'>
+                        Featured Blog
                       </div>
-                  )}
-          </section>
-          <HighlightContact/>
-        </main>
-      </Layout>
+                      <div className='text-xl text-darkBlue.700'>
+                        {featured.title}
+                      </div>
+                      <div className='text-xs pt-1 text-darkBlue.700'>
+                        <Date dateString={featured.date} />
+                      </div>
+                      <div className='text-darkBlue.700 py-4 '>{featured.description}</div>
+                      <Link href={`/posts/${featured.id}`}>
+                        <button className="mr-2 hover:bg-medRed.800 hover:text-white.100 text-xs text-medRed.700 uppercase px-4 py-3 border border-rust.500 rounded-lg">
+                          Continue Reading
+                        </button>
+                      </Link>
+                      <Link href="/blog">
+                        <button className="hover:bg-medRed.800 hover:text-white.100 text-xs text-medRed.700 uppercase px-4 py-3 border border-rust.500 rounded-lg">
+                         See All Posts
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </section>
+            )}
+        <Promo id={1}/>
+        <Features  featured="true" type="about" />
+    </Layout>
   )
 }
-

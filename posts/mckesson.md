@@ -1,18 +1,24 @@
 ---
 title: 'McKesson (In review)'
-type: "portfolio"
+type: "work"
 date: '2021-06-17'
 description: 'Designed an e-Commerce application for a subsidiary brand of McKesson'
 isFeatured: 'false'
-bannerImageSource: '/image/bgLG-mckesson.png'
-bannerSMImageSource: '/image/bgSM-mckesson.png'
+bannerImageSource: '/image/client/mckesson/banner-lg.png'
+bannerSMImageSource: '/image/client/mckesson/banner-sm.png'
 topic: 'Process | UI/UX Design'
-ogURL: 'https://www.rogerkatona.com/posts/betterVersion-crossTraining'
+author: 'Roger Katona'
+authorDescription: 'UI/UX Designer'
+authorImageSource: '/image/author_rogerkatona.png'
+ogURL: 'https://www.rogerkatona.com/posts/mckesson'
 ogType: 'article'
-ogImage: 'https://www.rogerkatona.com/image/bannerSM-crossTraining.jpg'
+ogImage: 'https://www.rogerkatona.com/image/client/mckesson/banner-sm.png'
 
 ---
 
-## Coming soon, in review.
+## In Review
+
+
+    
 
 

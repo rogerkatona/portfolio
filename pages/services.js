@@ -1,24 +1,32 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
+import Hero from "../components/hero";
+import Offerings from "../components/offerings";
+import Services from "../components/services";
+import Quote from "../components/quote";
+import Promo from "../components/promo";
 
-export default function Services() {
+export default function Workshops() {
+
     return (
         <Layout home>
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <div className="max-w-7xl mx-auto">
-                <section className='mt-12'>
-                    <header className='mb-16'>
-                        <div id="headlineText" className='text-6xl text-gray-700 font-light'>
-                            Services
-                        </div>
-                        <div id="subHeadlineText" className='text-base text-gray-500 mt-2'>
-                            A collection of articles to teach, inspire, and elevate our work as web designers and front-end developers.
-                        </div>
-                    </header>
-                </section>
+            <header className="bg-hero-design min-h-screen25vh max-h-screen25vh bg-cover bg-right bg-no-repeat">
+                <Hero id={1}/>
+            </header>
+            <Offerings type="services"/>
+            <div className="flex flex-row justify-center font-bebasNeue text-6xl text-gray.700 bg-gray.100 py-12">
+                UX Design
             </div>
+            <Services type="service" subtype="ux-design"/>
+            <Quote id={1}/>
+            <div className="flex flex-row justify-center font-bebasNeue text-6xl text-gray.700 bg-gray.100 py-12">
+                UX Consulting
+            </div>
+            <Services type="service" subtype="ux-consulting"/>
+            <Promo id={1}/>
 
         </Layout>
     )

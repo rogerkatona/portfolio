@@ -1,21 +1,20 @@
 
-
 const navItems = [
-    // {
-    //     label: "Home",
-    //     path: "/",
-    // },
     {
-        label: "Portfolio",
-        path: "/portfolio",
+        label: "UX Design Services",
+        path: "/services",
     },
-    // {
-    //     label: "Services",
-    //     path: "/services",
-    // },
     {
-        label: "Articles",
-        path: '/articles',
+        label: "Workshops",
+        path: "/workshops",
+    },
+    {
+        label: "Clients",
+        path: "/clients",
+    },
+    {
+        label: "Blog",
+        path: '/blog',
     },
     {
         label: "About",

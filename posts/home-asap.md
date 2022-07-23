@@ -1,15 +1,15 @@
 ---
 title: 'Home ASAP'
-type: 'portfolio'
-date: '2021-06-24'
+type: 'work'
+date: '2021-07-24'
 description: 'Design a B2C web application for a real estate agents property listings.  Building the User Interface from the ground up by creating an Information Architecture (IA) document and provide an interactive prototype.'
 isFeatured: 'false'
-bannerImageSource: '/image/bgLG-home-asap.png'
-bannerSMImageSource: '/image/bgSM-home-asap.png'
+bannerImageSource: '/image/client/home-asap/banner-lg.png'
+bannerSMImageSource: '/image/client/home-asap/banner-sm.png'
 topic: 'React | NextJS | User Interface Design | User Experience Design | Invision | Sketch'
-ogURL: 'https://www.rogerkatona.com/posts/reactForm'
+ogURL: 'https://www.blueprospect.com/posts/home-asap'
 ogType: 'portfolio'
-ogImage: 'https://www.rogerkatona.com/image/bannerSM-reactHooks.jpg'
+ogImage: 'https://www.blueprospect.com/image/client/home-asap/banner-sm.png'
 
 ---
 

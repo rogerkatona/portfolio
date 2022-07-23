@@ -1,4 +1,5 @@
 import {useState} from "react";
+import {useRouter} from "next/router";
 
 
 export const Form = ({ initialRef}) => {
@@ -16,7 +17,8 @@ export const Form = ({ initialRef}) => {
         message: ''
     });
 
-
+    const router = useRouter()
+    const [campaignState, setCampaignState] = useState(false)
 
     const clearFormState = () => {
         setFormState({ ...initialState });
@@ -24,7 +26,12 @@ export const Form = ({ initialRef}) => {
 
     const handleContactFormSubmit = async (e) => {
         e.preventDefault()
-        const location = "rogerkatona.com"
+
+        if (router.pathname.startsWith("/campaign/")){
+            setCampaignState(true)
+        }
+
+        const location = campaignState === true ? 'campaign-usAudit-blueprospect.com' : 'blueprospect.com'
         const endpoint =
             "https://ke37371vfe.execute-api.us-east-1.amazonaws.com/default/sendContactEmail";
         // We use JSON.stringify here so the data can be sent as a string via HTTP
@@ -45,25 +52,25 @@ export const Form = ({ initialRef}) => {
             try {
                 fetch(endpoint, requestOptions)
                     .then((res) => {
-                        if (res.status === 200) {
-                            setToastMessage({message:(
-                                    <div className="text-green-800 absolute bottom-0 -mb-10">
-                                        Thank you for reaching out to me.  I&apos;ll respond to you shortly!  Have a great day.
-                                    </div>
-                                )});
-                            clearFormState();
-                        }
-                    })
+                    if (res.status === 200) {
+                        setToastMessage({message:(
+                                <div className={`${router.pathname.startsWith("/campaign/")  ? 'hidden' : 'block'} absolute bottom-0 text-green-800 -mb-10`}>
+                                    Thank you for reaching out to me.  I&apos;ll respond to you shortly!  Have a great day.
+                                </div>
+                            )});
+                        clearFormState();
+                    }
+                })
             } catch (e) {
                 setToastMessage({message:(
-                        <div className="text-danger absolute bottom-0 -mb-10">
+                        <div className="text-danger font-bold absolute bottom-0 -mb-10">
                             Deepest apologies.  There was an error with your request.  Please try again later.
                         </div>
                     )})
             }
         } else {
             setToastMessage({message:(
-                    <div className="text-danger absolute bottom-0 -mb-10">
+                    <div className="text-danger font-bold absolute -bottom-1 -mb-10 ">
                         Please verify all fields are filled out.
                     </div>
                 )})
@@ -74,69 +81,69 @@ export const Form = ({ initialRef}) => {
 
     return (
         <>
-            <form onSubmit={handleContactFormSubmit}>
-                <div className="flex flex-col relative">
+        <form onSubmit={handleContactFormSubmit}>
+            <div className="flex flex-col relative">
 
-                    {/*show message to user*/}
-                    {toastMessage.message}
+                {/*show message to user*/}
+                {toastMessage.message}
 
-                    <div className="flex flex-col">
-                        <label
-                            className="uppercase tracking-wide text-xs">
-                            Name*
-                        </label>
-                        <input
-                            ref={initialRef}
-                            className="bg-gray-200 text-black border py-3 px-4 mb-4"
-                            placeholder="Enter your name"
-                            value={formState.name}
-                            onChange={(e) =>
-                                setFormState({ ...formState, name: e.target.value })
-                            }
-                        />
-                    </div>
-                    <div className="flex flex-col">
-                        <label
-                            className="uppercase tracking-wide text-xs">
-                            Email*
-                        </label>
-                        <input
-                            className="bg-gray-200 text-black border py-3 px-4 mb-4"
-                            placeholder="yourname@email.com"
-                            type="email"
-                            value={formState.email}
-                            onChange={(e) =>
-                                setFormState({ ...formState, email: e.target.value })
-                            }
-                        />
-                    </div>
+                <div className="flex flex-col">
+                    <label
+                        className={`${router.pathname.startsWith("/campaign/")  ? 'text-darkBlue.700' : 'text-white.100'} uppercase tracking-wide text-xs`}>
+                        Name*
+                    </label>
+                    <input
+                        ref={initialRef}
+                        className="text-darkBlue.700 border py-3 px-4 mb-4"
+                        placeholder="Enter your name"
+                        value={formState.name}
+                        onChange={(e) =>
+                            setFormState({ ...formState, name: e.target.value })
+                        }
+                    />
+                </div>
+                <div className="flex flex-col">
+                    <label
+                        className={`${router.pathname.startsWith("/campaign/")  ? 'text-darkBlue.700' : 'text-white.100'} uppercase tracking-wide text-xs`}>
+                        Email*
+                    </label>
+                    <input
+                        className="text-darkBlue.700 border py-3 px-4 mb-4"
+                        placeholder="yourname@email.com"
+                        type="email"
+                        value={formState.email}
+                        onChange={(e) =>
+                            setFormState({ ...formState, email: e.target.value })
+                        }
+                    />
+                </div>
+                <div className={`${router.pathname.startsWith("/campaign/")  ? 'hidden' : 'block'}`}>
                     <div className="">
-                        <div className="">
-                            <label
-                                className="uppercase tracking-wide text-xs">
-                                Anything else?
-                            </label>
-                            <div>
+                        <label
+                            className={`${router.pathname.startsWith("/campaign/")  ? 'text-darkBlue.700' : 'text-white.100'} uppercase tracking-wide text-xs`}>
+                            Anything else?
+                        </label>
+                        <div>
                         <textarea
-                            className="w-full border border-darkGray py-3 px-4 mb-4"
+                            className="w-full border border-darkBlue.700 py-3 px-4 mb-4 "
                             rows="4"
                             value={formState.contactMessage}
                             onChange={(e) =>
                                 setFormState({ ...formState, contactMessage: e.target.value })
                             }
                         />
-                            </div>
                         </div>
                     </div>
-                    <div className="">
-                        <button
-                            type="submit"
-                            className="hover:bg-secondary text-white text-2xl uppercase hover:text-gray-50 py-4 px-8 bg-link">
-                            Submit
-                        </button>
-                    </div>
                 </div>
-            </form>
+                <div className="">
+                    <button
+                        type="submit"
+                        className={`${router.pathname.startsWith("/campaign/")  ? 'hover:bg-tan.500 hover:text-medBlue.500' : 'hover:bg-tan.500 hover:text-medBlue.500'}  text-xs text-medBlue.500 uppercase px-3 py-2 lg:mt-0 mt-2 rounded-lg bg-tan.100 `}>
+                        {`${router.pathname.startsWith("/campaign/")  ? 'Submit your request' : 'Submit'}`}
+                    </button>
+                </div>
+            </div>
+        </form>
         </>
     )
 }

@@ -1,13 +1,13 @@
 const experienceItems = [
     {
         company: "Blue Prospect Design, LLC.",
-        role: "Principal UI/UX Designer",
+        role: "User Experience Designer",
         overview: "Responsible for web audit evaluations, designing user interfaces for our clients, leading the development team, and creative responsibilities.",
         dateRange: 'Jan 2005 - Current',
     },
     {
         company: "MobyMax",
-        role: "UI/UX Designer",
+        role: "User Experience Designer",
         overview: "Tasked with designing solutions for our edTech web applications ranging from User Interfaces for district level administrators to students.",
         dateRange: 'Oct 2015 - Mar 2021',
     },

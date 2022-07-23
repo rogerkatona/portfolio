@@ -1,11 +1,11 @@
 ---
 title: 'Cross-Training - An investment in your greatest resources'
-type: "articles"
-date: '2021-06-17'
-description: 'This approach is a specific technique of cross-training in IT that emphasizes a deep learning of roles nearest to you in the organization.'
+type: "blog"
+date: '2021-08-10'
+description: 'A better method of cross-training for UX Designers that emphasizes a deep learning of roles nearest to you in the organization.'
 isFeatured: 'false'
-bannerImageSource: '/image/banner-crossTraining.jpg'
-bannerSMImageSource: '/image/bannerSM-crossTraining.jpg'
+bannerImageSource: '/image/blog/cross-training/banner-lg.jpg'
+bannerSMImageSource: '/image/blog/cross-training/banner-sm.jpg'
 topic: 'Process | UI/UX Design'
 author: 'Roger Katona'
 authorDescription: 'UI/UX Designer'
