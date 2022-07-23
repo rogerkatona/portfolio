@@ -58,6 +58,7 @@ const serviceItems = [
     },
     {
         id:1,
+        featuredID:1,
         type:"service",
         subtype:"ux-consulting",
         number:"01",

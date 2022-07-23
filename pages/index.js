@@ -41,7 +41,7 @@ export default function Home({allPostsData}) {
         featuredPosts
             .filter(featured => featured.type === 'blog')
             .map(featured =>
-                <section key={featured.id} className='bg-white.100 p-12 '>
+                <section key={featured.id} className='bg-tan.50 p-12 '>
                   <div  className='flex lg:flex-row lg:flex-row flex-col max-w-7xl mx-auto'>
                     <div className='flex'>
                       <img
