@@ -1,8 +1,8 @@
 import '../styles/global.css'
 import Amplify from 'aws-amplify';
-import awsmobile from '../src/aws-exports';
+import awsconfig from '../src/aws-exports';
 
-Amplify.configure(awsmobile);
+Amplify.configure(awsconfig);
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
