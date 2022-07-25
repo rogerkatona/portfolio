@@ -17,12 +17,12 @@ export default function Workshops() {
                 <Hero id={1}/>
             </header>
             <Offerings type="services"/>
-            <div className="flex flex-row justify-center font-bebasNeue text-6xl text-gray.700 bg-gray.100 py-12">
+            <div className="text-center font-bebasNeue text-6xl text-gray.700 bg-gray.100 py-12">
                 Professional Design
             </div>
             <Services type="service" subtype="ux-design"/>
             <Quote id={2}/>
-            <div className="flex flex-row justify-center font-bebasNeue text-6xl text-gray.700 bg-gray.100 py-12">
+            <div className="text-center font-bebasNeue text-6xl text-gray.700 bg-gray.100 py-12">
                 Usability Analysis
             </div>
             <Services type="service" subtype="ux-analysis"/>

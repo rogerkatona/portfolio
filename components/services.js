@@ -9,15 +9,15 @@ export default function Services(props) {
 
     return (
         <>
-                <section className="flex flex-col px-12 pt-12 bg-gray.050">
+                <section className="flex flex-col md:px-12 px-6 py-6 bg-gray.050">
                     {filteredItem
                         .filter(filteredItem => filteredItem.subtype === props.subtype)
                         .map(filteredItem => (
                             <div
                                 key={filteredItem.id}
-                                className={`flex lg:flex-row flex-col pb-12 max-w-7xl mx-auto  ${filteredItem.id % 2 === 0  ? 'lg:flex-row-reverse ' : ''}`}>
+                                className={`flex lg:flex-row flex-col space-y-6 max-w-7xl mx-auto  ${filteredItem.id % 2 === 0  ? 'lg:flex-row-reverse ' : ''}`}>
 
-                                <div className="">
+                                <div className="pt-12">
                                     <img
                                         className=""
                                         src={filteredItem.src}
@@ -25,7 +25,7 @@ export default function Services(props) {
                                         alt={filteredItem.alt}
                                     />
                                 </div>
-                                <div className={`${filteredItem.id % 2 === 0  ? 'lg:pr-12' : 'lg:pl-12'} lg:w-4/5 w-full lg:pt-0 pt-6`}>
+                                <div className={`${filteredItem.id % 2 === 0  ? 'lg:pr-12' : 'lg:pl-12'} lg:w-4/5 w-full pt-0 `}>
                                     <div className='font-bebasNeue text-4xl text-gray.400 font-light border-b'>{filteredItem.number}</div>
                                     <div className='text-2xl text-gray.700 pt-4'>{filteredItem.title}</div>
                                     <p className="pt-2">{filteredItem.description}</p>
