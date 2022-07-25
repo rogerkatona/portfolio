@@ -34,14 +34,13 @@ export default function Home({allPostsData}) {
         <Features  featured="true" type="service" subtype="ux-design"/>
         <Quote id={2}/>
         <Features  featured="true" type="workshop"/>
-        <Promo id={0}/>
         <Features  featured="true" type="client" />
-        <Promo id={2}/>
+
       {
         featuredPosts
             .filter(featured => featured.type === 'blog')
             .map(featured =>
-                <section key={featured.id} className='bg-tan.50 p-12 '>
+                <section key={featured.id} className='bg-white.100 p-12 '>
                   <div  className='flex lg:flex-row lg:flex-row flex-col max-w-7xl mx-auto'>
                     <div className='flex'>
                       <img
@@ -80,6 +79,7 @@ export default function Home({allPostsData}) {
                   </div>
                 </section>
             )}
+      <Promo id={2}/>
         <Features  featured="true" type="about" />
     </Layout>
   )

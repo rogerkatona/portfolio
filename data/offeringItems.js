@@ -2,26 +2,26 @@ const offeringItems = [
     {
         id: 0,
         type: "services",
-        label: "UX Design",
+        label: "Professional Design",
         description: "Modern, User-Centered Design",
-        src: "/image/icon/services-design.svg",
+        src: "/image/icon/services-dev.svg",
         alt: "UI/UX services for existing and new digital products",
         list: [
-                "User-Centric Design",
-                "Workflow Analysis for Critical Paths",
+                "Complex UI made simple",
+                "Bespoke design for your digital properties",
         ]
     },
     {
-        id: 1,
+        id: 11,
         type: "services",
-        label: "UX Consulting",
-        description: "Transformative Solutions for your UX Team",
-        src: "/image/icon/services-dev.svg",
+        label: "Usability Analysis",
+        description: "Optimize your digital property",
+        src: "/image/icon/services-report.svg",
         alt: 'Opening Keynote',
         list: [
-                "Video Studio",
-                "Audio Recording",
-            ]
+            "Workflow Analysis for Critical Paths",
+            "Happier customers, and internal users",
+        ]
     },
     {
         id: 2,

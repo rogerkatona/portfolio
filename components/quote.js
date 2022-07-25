@@ -17,7 +17,7 @@ export default function Quote(props) {
                         key={filteredItem.id}
                         className="flex flex-row  max-w-7xl mx-auto xl:px-0 px-6">
 
-                        <section className={`mt-20 mb-12 max-w-7xl mx-auto ${filteredItem.id % 2 === 0  ? 'bg-medRed.50' : 'bg-medRed.50'}`}>
+                        <section className={`mt-20 mb-12 max-w-7xl mx-auto ${filteredItem.id % 2 === 0  ? 'bg-darkBlue.50' : 'bg-darkBlue.50'}`}>
                             <div className="flex flex-col justify-center items-center p-12 pt-6 relative">
                                 <div className='flex flex-shrink-0 absolute -top-10'>
                                     <img

@@ -1,7 +1,7 @@
 const heroItems = [
     {
         id:1,
-        label: "UX Design Services",
+        label: "UX Services",
         description: "Approaches a design challenge with an excellent process that includes research, setting best practices based on a heuristic analysis, garnering valuable input from other UX experts, and lastly proving the concept works in front of targeted users.",
         background: "dark",
     },

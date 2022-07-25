@@ -18,7 +18,7 @@ export default function Workshops() {
             </header>
             <Offerings type="workshops"/>
             <div className="flex flex-row justify-center font-bebasNeue text-5xl text-gray.700 bg-gray.100 py-12">
-                In Person Workshop
+                In-Person Workshop
             </div>
             <Services type="workshop" subtype="in-person"/>
             <Quote id={3}/>

@@ -18,15 +18,15 @@ export default function Workshops() {
             </header>
             <Offerings type="services"/>
             <div className="flex flex-row justify-center font-bebasNeue text-6xl text-gray.700 bg-gray.100 py-12">
-                UX Design
+                Professional Design
             </div>
             <Services type="service" subtype="ux-design"/>
-            <Quote id={1}/>
+            <Quote id={2}/>
             <div className="flex flex-row justify-center font-bebasNeue text-6xl text-gray.700 bg-gray.100 py-12">
-                UX Consulting
+                Usability Analysis
             </div>
-            <Services type="service" subtype="ux-consulting"/>
-            <Promo id={1}/>
+            <Services type="service" subtype="ux-analysis"/>
+            <Promo id={0}/>
 
         </Layout>
     )
