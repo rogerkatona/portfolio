@@ -79,8 +79,9 @@ export default function Home({allPostsData}) {
                   </div>
                 </section>
             )}
+      <Features  featured="true" type="about" />
       <Promo id={2}/>
-        <Features  featured="true" type="about" />
+
     </Layout>
   )
 }
