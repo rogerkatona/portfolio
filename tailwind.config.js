@@ -57,6 +57,7 @@ module.exports = {
       },
       backgroundImage: theme => ({
         'hero-blog': "url('/image/hero-blog.jpg')",
+        'hero-index': "url('/image/hero-index.jpg')",
         'hero-workshop': "url('/image/hero-workshop.jpg')",
         'hero-client': "url('/image/hero-client.jpg')",
         'hero-design': "url('/image/hero-design.jpg')",
