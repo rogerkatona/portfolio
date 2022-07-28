@@ -15,7 +15,7 @@ export default function Quote(props) {
                 .map(filteredItem => (
                     <div
                         key={filteredItem.id}
-                        className="flex flex-row  max-w-7xl mx-auto xl:px-0 px-6">
+                        className="flex flex-row max-w-7xl mx-auto xl:px-0 px-6 pb-12">
 
                         <section className={`mt-20  max-w-7xl mx-auto ${filteredItem.id % 2 === 0  ? 'bg-darkBlue.50' : 'bg-darkBlue.50'}`}>
                             <div className="flex flex-col justify-center items-center md:px-12 px-6 py-12 pt-6 relative">

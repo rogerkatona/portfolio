@@ -9,13 +9,13 @@ export default function Services(props) {
 
     return (
         <>
-                <section className="flex flex-col md:px-12 px-6 py-6 bg-gray.050">
+                <section className="flex flex-col md:px-6 px-6 py-12 pt-6 bg-gray.050 ">
                     {filteredItem
                         .filter(filteredItem => filteredItem.subtype === props.subtype)
                         .map(filteredItem => (
                             <div
                                 key={filteredItem.id}
-                                className={`flex lg:flex-row flex-col space-y-6 max-w-7xl mx-auto  ${filteredItem.id % 2 === 0  ? 'lg:flex-row-reverse ' : ''}`}>
+                                className={`flex lg:flex-row flex-col  md:space-y-12  space-y-6 max-w-7xl mx-auto  ${filteredItem.id % 2 === 0  ? 'lg:flex-row-reverse ' : ''}`}>
 
                                 <div className="pt-12">
                                     <img
