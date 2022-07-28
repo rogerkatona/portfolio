@@ -30,7 +30,7 @@ const serviceItems = [
         featuredHeader:"Design Service",
         featuredButtonLabel:"See All Design Services",
         date:"2021-08-10",
-        title: "Defining your digital properties information architecture (IA)",
+        title: "Defining your digital properties' information architecture (IA)",
         description: "At the highest level Information Architecture is the structural design of your digital property.  It is a combination of organization, labeling, search, and navigation systems. Organization is accomplished by grouping the smallest “atoms” of information into meaningful and distinct categories, labeling is figuring out what to call and how to navigation those categories.",
         src: '/image/service-03.jpg',
         isButtonActive:'false',
