@@ -2,7 +2,7 @@ const heroItems = [
     {
         id:1,
         label: "UX Services",
-        description: "Approaches a design challenge with an excellent process that includes research, setting best practices based on a heuristic analysis, garnering valuable input from other UX experts, and lastly proving the concept works in front of targeted users.",
+        description: "Design is never in a vacuum. Introducing a new feature or process into an existing digital property requires a thoughtful understanding of how users currently navigate and complete tasks. ",
         background: "dark",
     },
     {
