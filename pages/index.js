@@ -32,7 +32,7 @@ export default function Home({allPostsData}) {
         <HeroIndex/>
         <ClientLogos/>
         <Features  featured="true" type="service" subtype="ux-design"/>
-        <Quote id={2}/>
+        <Quote id={1}/>
         <Features  featured="true" type="workshop"/>
         <Features  featured="true" type="client" />
 

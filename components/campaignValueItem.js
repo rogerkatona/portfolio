@@ -11,10 +11,10 @@ const Items = props => (
                     alt={props.alt}
                 />
             <div className="flex flex-col justify-center ">
-                <div className="text-2xl text-white">{props.text}</div>
+                <div className="text-2xl text-white.100">{props.text}</div>
                 <div className="">
                     <Link href={props.referenceLink}>
-                        <a className='text-sand text-xs italic hover:underline '>View Source</a>
+                        <a className='text-tan.300 text-xs italic hover:underline '>View Source</a>
                     </Link>
                 </div>
             </div>

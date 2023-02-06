@@ -2,7 +2,7 @@ const campaignFeatureItems = [
     {
         label: "Evaluate",
         description: "A comprehensive look at your digital product from a user's perspective.",
-        src: "/image/icon-campaign-uxaudit-03.svg",
+        src: "/image/campaign/icon-campaign-uxaudit-03.svg",
         alt: "User Experience Audit Report Icon",
         list: [
 
@@ -15,7 +15,7 @@ const campaignFeatureItems = [
     {
         label: "Report",
         description: "Update existing products and developing new products.",
-        src: "/image/icon-campaign-uxaudit-05.svg",
+        src: "/image/campaign/icon-campaign-uxaudit-05.svg",
         alt: 'Development Services Icon',
         list: [
             "Present an easy to read and understand report",

@@ -10,7 +10,7 @@
         @apply font-roboto text-3xl;
     }
     h2 {
-        @apply text-xl md:mt-10 mt-6 mb-2;
+        @apply text-2xl md:mt-10 mt-6 mb-4;
     }
     h3 {
         @apply text-4xl font-roboto text-gray.700;
@@ -23,6 +23,17 @@
          }
     p {
         @apply leading-loose text-justify md:text-left mb-6;
+    }
+    ul {
+        @apply mb-8 mt-4;
+    }
+
+    ol li {
+        @apply leading-loose text-justify md:text-left mb-6 ml-4 list-item;
+    }
+
+    ul li {
+        @apply list-disc list-inside leading-loose text-justify md:text-left ;
     }
 
     p a {

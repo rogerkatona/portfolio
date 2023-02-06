@@ -89,12 +89,12 @@ export const Form = ({ initialRef}) => {
 
                 <div className="flex flex-col">
                     <label
-                        className={`${router.pathname.startsWith("/campaign/")  ? 'text-darkBlue.700' : 'text-white.100'} uppercase tracking-wide text-xs`}>
+                        className={`${router.pathname.startsWith("/campaign/")  ? 'text-white.100' : 'text-white.100'} uppercase tracking-wide text-xs`}>
                         Name*
                     </label>
                     <input
                         ref={initialRef}
-                        className="text-darkBlue.700 border py-3 px-4 mb-4"
+                        className="text-tan.500 border py-3 px-4 mb-4"
                         placeholder="Enter your name"
                         value={formState.name}
                         onChange={(e) =>
@@ -104,11 +104,11 @@ export const Form = ({ initialRef}) => {
                 </div>
                 <div className="flex flex-col">
                     <label
-                        className={`${router.pathname.startsWith("/campaign/")  ? 'text-darkBlue.700' : 'text-white.100'} uppercase tracking-wide text-xs`}>
+                        className={`${router.pathname.startsWith("/campaign/")  ? 'text-white.100' : 'text-white.100'} uppercase tracking-wide text-xs`}>
                         Email*
                     </label>
                     <input
-                        className="text-darkBlue.700 border py-3 px-4 mb-4"
+                        className="text-tan.500 border py-3 px-4 mb-4"
                         placeholder="yourname@email.com"
                         type="email"
                         value={formState.email}

@@ -24,6 +24,7 @@ module.exports = {
         "screen50vh": "calc(50vh)",
         "screen47vh": "calc(47vh)",
         "screen40vh": "calc(40vh)",
+        "screen35vh": "calc(35vh)",
         "screen25vh": "calc(25vh)",
         "screen20vh": "calc(20vh)",
       }),

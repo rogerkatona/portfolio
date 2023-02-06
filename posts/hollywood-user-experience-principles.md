@@ -3,7 +3,7 @@ title: 'Crushing Snacks at the Movies, and Applying 3 Fundamental User Experienc
 type: 'blog'
 date: '2022-06-25'
 description: "I can't speak for you, but as a designer, I see most things through the lens of my chosen profession. "
-isFeatured: 'true'
+isFeatured: 'false'
 bannerImageSource: '/image/blog/hollywood/banner-sm.png'
 bannerSMImageSource: '/image/blog/hollywood/banner-sm.png'
 imageSourceFeatured: '/image/blog/hollywood/banner-lg.png'
