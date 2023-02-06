@@ -21,7 +21,7 @@ export default function UxAudit() {
             </Head>
 
             <div>
-                <header className="w-full bg-darkBlue.400 xl:px-0 md:px-12 px-6 xl:py-24 py-12">
+                <header className="w-full bg-campaign.500 xl:px-0 md:px-12 px-6 xl:py-24 py-12">
                     <section className='flex lg:flex-row flex-col justify-between items-center max-w-7xl mx-auto'>
                         <div className=''>
                             <div className='font-roboto text-6xl tracking-tighter text-white.100'>User Experience Audit</div>
@@ -42,20 +42,20 @@ export default function UxAudit() {
                     </section>
                 </header>
                 <CampaignWhatIs/>
-                <div className='bg-darkBlue.400 bg-opacity-5 w-full'>
+                <div className='bg-campaign.800 bg-opacity-5 w-full'>
                     <CampaignFeatures/>
                 </div>
-                <div className="w-full bg-tan.800 xl:px-0 md:px-12 px-6 xl:py-24 py-12 ">
+                <div className="w-full bg-campaign.500 xl:px-0 md:px-12 px-6 xl:py-24 py-12 ">
                     <CampaignCTA002/>
                 </div>
                 <div className="w-full bg-bg-contactModal">
                     <CampaignValue/>
                 </div>
                 <CampaignFaqs/>
-                <div className="w-full bg-tan.100">
+                <div className="w-full bg-campaign.50">
                     <CampaignPrice/>
                 </div>
-                <div className="w-full bg-medBlue.400 xl:px-0 md:px-12 px-6 xl:py-24 py-12 ">
+                <div className="w-full bg-campaign.500 xl:px-0 md:px-12 px-6 xl:py-24 py-12 ">
                     <CampaignCTA001/>
                 </div>
             </div>
