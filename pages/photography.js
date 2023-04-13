@@ -20,8 +20,8 @@ export default function Photography() {
                 <header className="bg-hero-blog min-h-screen25vh max-h-screen25vh bg-cover bg-right bg-no-repeat">
                     <Hero id={6}/>
                 </header>
-                <div className='font-bebasNeue text-6xl uppercase text-gray.700 flex flex-row justify-center py-12'>Featured Work</div>
-                <section className="py-24 bg-gray.100">
+                <div className='font-bebasNeue text-6xl uppercase text-gray.700 flex flex-row justify-center md:py-12 py-6'>Featured Work</div>
+                <section className="md:py-24 py-12 p-6 bg-gray.100">
                     <div className="flex flex-col max-w-7xl mx-auto"  >
                         <div className=''>
                             <img
@@ -33,7 +33,7 @@ export default function Photography() {
                 </section>
                 <section className="bg-tan.50">
                     <div className="max-w-7xl mx-auto ">
-                        <div className="md:grid md:grid-cols-2 md:gap-6 xl:px-0 md:px-12 px-6 xl:py-24 py-12">
+                        <div className="md:grid md:grid-cols-2 md:gap-6 xl:px-0 md:px-12 px-6 xl:py-24 py-6">
                             <div className="flex flex-col md:py-0 py-6">
                                 <div className='flex'>
                                     <img

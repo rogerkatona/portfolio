@@ -9,7 +9,7 @@ export default function Footer() {
     const {isShowing, toggle} = useModal();
 
     return (
-        <footer className="flex flex-col justify-center md:items-center md:px-0 px-6 bg-lightBlue.800 text-white py-48 space-y-6">
+        <footer className="flex flex-col justify-center md:items-center md:px-0 px-6 bg-lightBlue.800 text-white py-24 space-y-6">
             <section>
                 <Link href='/'>
                     <a>

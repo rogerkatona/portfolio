@@ -20,7 +20,7 @@ export default function Promo(props) {
                         key={filteredItem.id}
                         className="flex flex-row  max-w-7xl mx-auto ">
 
-                        <section className="flex flex-col md:px-0 px-6 py-12 lg:mx-auto lg:max-w-7xl">
+                        <section className="flex flex-col md:px-0 px-6 md:py-12 py-6 lg:mx-auto lg:max-w-7xl">
 
                             <div className="font-bebasNeue text-3xl text-gray.700 pb-4">{filteredItem.headline}</div>
 

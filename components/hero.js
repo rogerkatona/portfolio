@@ -13,10 +13,10 @@ export default function Hero(props) {
             {filteredItem.map(filteredItem => (
                 <section
                     key={filteredItem.id}
-                    className="flex flex-col justify-center w-3/4">
+                    className="flex flex-col justify-center md:w-3/4 w-full">
                     <div>
                         <div className={`${filteredItem.background === 'dark'  ? 'text-white.100' : 'text-lightBlue.500'} font-bebasNeue md:text-7xl text-6xl uppercase`}>{filteredItem.label}</div>
-                        <div className={`${filteredItem.background === 'dark'  ? 'text-tan.300' : 'text-lightBlue.500'}  md:w-3/4`}>{filteredItem.description}</div>
+                        <div className={`${filteredItem.background === 'dark'  ? 'text-tan.300' : 'text-lightBlue.500'}  md:w-3/4 `}>{filteredItem.description}</div>
                     </div>
                 </section>
             ))}
