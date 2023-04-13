@@ -26,6 +26,15 @@ const promoItems = [
         actionText: "Understanding what works in today's market is one way UX designers provide value to your organization.  Contact Roger to find out more.",
         buttonLabel: 'Contact',
     },
+    {
+        id:3,
+        headline: "Did you know?",
+        title: 'MIT neuroscientists find the brain can identify images seen for as little as 13 milliseconds..',
+        source: "Source: https://news.mit.edu/2014/in-the-blink-of-an-eye-0116",
+        text: "Imagine seeing a dozen pictures flash by in a fraction of a second. You might think it would be impossible to identify any images you see for such a short time. However, a team of neuroscientists from MIT has found that the human brain can process entire images that the eye sees for as little as 13 milliseconds — the first evidence of such rapid processing speed.",
+        actionText: "The value of quality imagery on your website has a significant impact.",
+        buttonLabel: 'Contact',
+    },
 ];
 
 export default promoItems

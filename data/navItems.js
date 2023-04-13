@@ -9,6 +9,10 @@ const navItems = [
         path: "/workshops",
     },
     {
+        label: "Photography",
+        path: "/photography",
+    },
+    {
         label: "Clients",
         path: "/clients",
     },

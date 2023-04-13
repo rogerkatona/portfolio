@@ -12,6 +12,12 @@ const heroItems = [
         background: "dark",
     },
     {
+        id:6,
+        label: "photography",
+        description: "Images play a significant role in story telling, whether it's video on a production shoot, or a photograph from our past.  Images have the power to evoke emotion, thought, wonder.",
+        background: "light",
+    },
+    {
         id:3,
         label: "clients",
         description: "A collection of organizations I have been fortunate to work with as a seasoned professional. I have inspired and been inspired, I have given my talent and skills to these organizations and they have given me as much in return.",
