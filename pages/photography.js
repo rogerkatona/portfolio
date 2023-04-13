@@ -37,7 +37,7 @@ export default function Photography() {
                             <div className="flex flex-col md:py-0 py-6">
                                 <div className='flex'>
                                     <img
-                                        src="/image/photography/20230413-_DSC0617.jpg"
+                                        src="/image/photography/purse-0101.jpg"
                                         alt="purse-01"
                                     />
 
@@ -46,7 +46,7 @@ export default function Photography() {
                             <div className="flex flex-col md:py-0 py-6">
                                 <div className='flex'>
                                     <img
-                                        src="/image/photography/20230413-_DSC0619.jpg"
+                                        src="/image/photography/purse-0105.jpg"
                                         alt="purse-01"
                                     />
                                 </div>
@@ -54,7 +54,7 @@ export default function Photography() {
                             <div className="flex flex-col md:py-0 py-6">
                                 <div className='flex'>
                                     <img
-                                        src="/image/photography/20230413-_DSC0618.jpg"
+                                        src="/image/photography/purse-0102.jpg"
                                         alt="purse-01"
                                     />
                                 </div>
@@ -62,7 +62,7 @@ export default function Photography() {
                             <div className="flex flex-col md:py-0 py-6">
                                 <div className='flex'>
                                     <img
-                                        src="/image/photography/20230413-_DSC0621.jpg"
+                                        src="/image/photography/purse-0104.jpg"
                                         alt="purse-01"
                                     />
                                 </div>
@@ -70,15 +70,7 @@ export default function Photography() {
                             <div className="flex flex-col md:py-0 py-6">
                                 <div className='flex'>
                                     <img
-                                        src="/image/photography/20230413-_DSC0622.jpg"
-                                        alt="purse-01"
-                                    />
-                                </div>
-                            </div>
-                            <div className="flex flex-col md:py-0 py-6">
-                                <div className='flex'>
-                                    <img
-                                        src="/image/photography/20230413-_DSC0623.jpg"
+                                        src="/image/photography/purse-0103.jpg"
                                         alt="purse-01"
                                     />
                                 </div>
