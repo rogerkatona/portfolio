@@ -10,6 +10,9 @@ bannerImageSource: '/image/client/mobymax/banner-lg.png'
 bannerSMImageSource: '/image/client/mobymax/banner-sm.png'
 topic: 'Rapid Design Cycle | A/B Testing | Quantitative and Qualitative Testing | Functional Prototypes | Agile Methodology'
 alt: 'Portfolio-MobyMax'
+author: 'Roger Katona'
+authorDescription: 'UI/UX Designer'
+authorImageSource: '/image/author_rogerkatona.png'
 ogURL: 'https://www.rogerkatona.com/posts/mobymax'
 ogType: 'article'
 ogImage: 'https://www.blueprospect.com/image/client/mobymax/banner-sm.png'
@@ -18,7 +21,7 @@ ogImage: 'https://www.blueprospect.com/image/client/mobymax/banner-sm.png'
 ---
 
 ## Project Brief
-It was an amazing opportunity to work with a cutting edge Edtech software company.  As districts and schools around the country adopted our software we felt a real responsibility of providing a solution that truly helps kids catch up if they were falling behind in the classroom.
+It was an amazing opportunity to work with a cutting edge Ed-tech software company.  As districts and schools around the country adopted our software we felt a real responsibility of providing a solution that truly helps kids catch up if they were falling behind in the classroom.
 
 ## Responsibilities
 - Design the administration user interface (UI) for districts, schools, and teachers.  This application enabled administrators to evaluate a student's mastery of skills using adaptive assessments, and based on the results assign lessons based on state standards.
@@ -42,5 +45,5 @@ It was an amazing opportunity to work with a cutting edge Edtech software compan
 
 ---
 
-Information Architecture for a complete redesign of the adminstration user interface
-![MobyMax Information Architecture](/image/postGraphic-mobymaxA.png)
+Information Architecture for a complete redesign of the administration user interface
+![MobyMax Information Architecture](/image/client/mobymax/postGraphic-mobymaxA.png)
