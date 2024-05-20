@@ -5,14 +5,6 @@ const navItems = [
         path: "/services",
     },
     {
-        label: "Workshops",
-        path: "/workshops",
-    },
-    {
-        label: "Photography",
-        path: "/photography",
-    },
-    {
         label: "Clients",
         path: "/clients",
     },

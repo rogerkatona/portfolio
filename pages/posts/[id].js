@@ -28,7 +28,7 @@ export default function Post({ postData }) {
 
     return (
         <Layout>
-            <Head>
+             <Head>
                 <title>{postData.title}</title>
                 <meta property="og:url" content={postData.ogURL} key="openGraphURL" />
                 <meta property="og:type" content={postData.ogtype} />
