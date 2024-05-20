@@ -1,7 +1,7 @@
 
 const navItems = [
     {
-        label: "UX Services",
+        label: "UI/UX Services",
         path: "/services",
     },
     {

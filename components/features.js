@@ -32,15 +32,15 @@ export default function Features(props) {
                                             <a className='hover:underline uppercase text-xs'>{filteredItem.featuredURL}</a>
                                         </Link>
                                     </div>
-                                    <div className='font-bebasNeue text-4xl text-gray.700 pb-4'>
+                                    <div className='font-bebasNeue text-4xl text-gray.700 '>
                                         {filteredItem.featuredHeader}
                                     </div>
                                     <div className='text-xl text-gray.700'>
                                         {filteredItem.title}
                                     </div>
-                                    <div className={` text-xs uppercase ${filteredItem.type === 'about'  ? 'hidden' : 'block'}`}>
+{/*                                    <div className={` text-xs uppercase ${filteredItem.type === 'about'  ? 'hidden' : 'block'}`}>
                                         <Date dateString={filteredItem.date} />
-                                    </div>
+                                    </div>*/}
                                     <div className='text-gray.700 py-4 '>{filteredItem.description}</div>
                                     <div className="flex flex-row">
                                         <div className={`${filteredItem.isButtonActive === 'true'  ? 'block' : 'hidden'}  pr-2`}>

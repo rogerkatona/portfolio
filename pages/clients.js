@@ -69,10 +69,10 @@ export default function Blog({allPostsData}) {
                                         <div className='font-bebasNeue text-4xl text-gray.700 pt-4'>
                                             {featured.title}
                                         </div>
-                                        <div className={` text-xs pt-1 uppercase ${featured.type === 'about'  ? 'hidden' : 'block'}`}>
+{/*                                        <div className={` text-xs pt-1 uppercase ${featured.type === 'about'  ? 'hidden' : 'block'}`}>
                                             <Date dateString={featured.date} />
-                                        </div>
-                                        <div className='text-gray.700 py-4 '>{featured.description}</div>
+                                        </div>*/}
+                                        <div className='text-gray.700 py-2 '>{featured.description}</div>
                                         <div className="flex flex-row">
                                             <Link href={`/posts/${featured.id}`}>
                                                 <button className="hover:bg-medRed.800 hover:text-white.100 text-xs text-medRed.700 uppercase px-4 py-3 border border-medRed.500 rounded-lg">
@@ -105,9 +105,9 @@ export default function Blog({allPostsData}) {
                                                     <div className='font-roboto text font-medium text-medRed.700 hover:underline truncate'>{title}</div>
                                                 </a>
                                             </Link>
-                                            <div className='text-xs '>
+{/*                                            <div className='text-xs '>
                                                 <Date dateString={date} />
-                                            </div>
+                                            </div>*/}
                                         </div>
 
                                     </div>

@@ -1,7 +1,7 @@
 const heroItems = [
     {
         id:1,
-        label: "UX Services",
+        label: "UI/UX Services",
         description: "Design is never in a vacuum. Introducing a new feature or process into an existing digital property requires a thoughtful understanding of how users currently navigate and complete tasks. ",
         background: "dark",
     },
