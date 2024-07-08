@@ -3,7 +3,7 @@ title: 'A simple 3-step approach to improving how your UX team is viewed within 
 type: "blog"
 date: '2023-02-01'
 description: "It is equally important that your UX team completes work related tasks in the best way, but also how you share who your team is, and how they go about their work to your organizations' leadership."
-isFeatured: 'true'
+isFeatured: 'false'
 bannerImageSource: '/image/blog/purpose-driven-design/banner-lg.jpg'
 bannerSMImageSource: '/image/blog/purpose-driven-design/banner-sm.jpg'
 imageSourceFeatured: '/image/blog/purpose-driven-design/banner-lg.jpg'

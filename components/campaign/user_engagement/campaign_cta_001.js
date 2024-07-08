@@ -1,5 +1,5 @@
 
-import {Form} from "./form";
+import {Form} from "../../form";
 import {useRef} from "react";
 
 

@@ -1,5 +1,5 @@
 import CampaignValueItem from "./campaignValueItem";
-import campaignValueItems from "../data/campaignValueItems";
+import campaignValueItems from "../../../data/campaignValueItems";
 
 export default function CampaignValue() {
     return (

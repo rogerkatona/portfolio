@@ -37,48 +37,39 @@ export default function Post({ postData }) {
                 <meta property="og:image" content={postData.ogImage} />
             </Head>
 
-            <div className="">
-                <section className=''>
                     <section className="w-full bg-opacity-5 bg-primary">
-                        <div className='lg:hidden md:block hidden max-w-7xl mx-auto md:px-12 px-6 pt-12'>
-                            <Link href='/campaign/ux-audit'>
-                                <a>
-                                    <img
-                                        className="filter transition duration-500 ease-in-out hover:brightness-50"
-                                        src="/image/campaign/adLG-ux-audit.png"
-                                        alt="UX audit graphic"
-                                    />
-                                </a>
-                            </Link>
-                        </div>
                             <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-12 py-12 flex md:flex-row flex-col">
-                        <section className="lg:w-4/5">
-                            <div className='font-roboto lg:text-3xl text-2xl '>{postData.title}</div>
-                            <div className="py-2"> {postData.description} </div>
+                        <section className="">
+                            <div className='font-roboto lg:text-4xl text-2xl '>{postData.title}</div>
+                            <div className="py-2 text-xl"> {postData.description} </div>
                             <div className=""> <span className="font-bold pr-2 ">Topics:</span>{postData.topic} </div>
-                            <div className='font-banner text-xs pt-2 '>
+                            <div className='font-banner  pt-2 '>
                                 <Date dateString={postData.date} />
                             </div>
                             <hr/>
 
-                            <section className='flex flex-row items-center'>
-                                <div className='md:pr-4'>
-                                    <img
-                                        className="md:block hidden"
-                                        src={postData.authorImageSource}
-                                        height={80}
-                                        width={80}
-                                        alt="author image - Roger Katona"
-                                    />
-                                </div>
-                                <div className='min-w-max'>
-                                    <div className='font-medium'>{postData.author}</div>
-                                    <div className='text-xs'>{postData.authorDescription}</div>
-                                </div>
-                                <div className='flex flex-row justify-end w-full'>
-                                    <SocialMediaItem socialMediaItems={socialMediaItems}/>
+
+                            <section className='flex xl:flex-row flex-col justify-between '>
+                                <div className='flex flex-row items-center'>
+                                    <div className='pr-4 shrink-0 md:block hidden'>
+                                        <img
+                                            className=""
+                                            src={postData.authorImageSource}
+                                            height={100}
+                                            width={100}
+                                            alt="author image - Roger Katona"
+                                        />
+                                    </div>
+                                    <div className=''>
+                                        <div className='font-raleway text-xl text-gray.800 font-bold '>{postData.author}</div>
+                                        <div className='pb-2 text-gray.500'>{postData.authorDescription}</div>
+                                        <div className='flex flex-row items-center space-x-2'>
+                                            <SocialMediaItem socialMediaItems={socialMediaItems}/>
+                                        </div>
+                                    </div>
                                 </div>
                             </section>
+
                             <section>
                                 <div className='mt-6'>
                                     <img
@@ -98,24 +89,8 @@ export default function Post({ postData }) {
                                 <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
                             </section>
                         </section>
-                        <section className='md:pl-12 lg:block md:hidden flex-shrink-0'>
-                            <div className=''>
-                                <Link href='/campaign/ux-audit'>
-                                    <a>
-                                        <img
-                                            className="filter transition duration-500 ease-in-out hover:brightness-75"
-                                            src="/image/campaign/adSM-ux-audit.png"
-                                            alt="UX audit graphic"
-                                        />
-                                    </a>
-                                </Link>
-                            </div>
-                        </section>
                         </div>
                     </section>
-
-                </section>
-            </div>
 
         </Layout>
     )

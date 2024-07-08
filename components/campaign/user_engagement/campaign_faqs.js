@@ -1,4 +1,4 @@
-import campaignFAQItems from "../data/campaignFAQItems";
+import campaignFAQItems from "../../../data/campaignFAQItems";
 import CampaignFAQItem from "./campaignFAQItem";
 
 

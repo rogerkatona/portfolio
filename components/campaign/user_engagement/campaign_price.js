@@ -1,5 +1,5 @@
 import CampaignPriceItem from "./campaignPriceItem";
-import campaignPriceItems from "../data/campaignPriceItems";
+import campaignPriceItems from "../../../data/campaignPriceItems";
 
 
 export default function CampaignPrice() {

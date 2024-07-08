@@ -3,14 +3,14 @@
 import Link from "next/link";
 
 const SocialMedia = props => (
-    <div className="ml-2 filter transition duration-500 ease-in-out hover:brightness-75">
+    <div className="filter transition duration-500 ease-in-out hover:brightness-75">
         <Link
             href={props.path}>
             <a>
                 <img
                     src={props.src}
-                    height={32}
-                    width={32}
+                    height={24}
+                    width={24}
                     alt={props.alt}
                 />
             </a>

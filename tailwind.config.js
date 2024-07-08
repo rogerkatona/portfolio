@@ -12,6 +12,13 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      gap: {
+        '0.1': '1px',
+      },
+      maxWidth: {
+        '7xl': '1280px',
+        '8xl': '1440px',
+      },
       height: theme => ({
         "screen/2": "50vh",
         "screen/3": "calc(100vh / 3)",

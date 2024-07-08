@@ -1,4 +1,4 @@
-import {Form} from "./form";
+import {Form} from "../../form";
 import {useRef} from "react";
 
 export default function CampaignCTA002() {
